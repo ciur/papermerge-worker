@@ -13,7 +13,7 @@ setup(
     description=("Papermerge worker - extract OCR text documents"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    license="Proprietary",
+    license="Apache 2.0 License",
     keywords="tesseract documentation tutorial",
     packages=['pmworker'],
     classifiers=[
