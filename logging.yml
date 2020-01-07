@@ -9,7 +9,7 @@ handlers:
     address: /dev/log
     facility: local7
 loggers:
-  briolette:
+  pmworker:
     level: INFO
     handlers: [syslog]
     propagate: yes

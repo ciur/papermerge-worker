@@ -169,8 +169,8 @@ def download(
     """
     model_endpoint is instance of one of:
 
-        * briolette.endpoint.DocumentUrl
-        * briolette.endpoint.PageUrl.
+        * pmworker.endpoint.DocumentUrl
+        * pmworker.endpoint.PageUrl.
 
     Will download either Document original file or Page associated .txt file
     from remote S3 location to local filesystem.

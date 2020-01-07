@@ -4,6 +4,8 @@ import argparse
 from unittest.loader import TestLoader
 from unittest.runner import TextTestRunner
 
+from pmworker import setup_logging
+
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
 )
@@ -11,11 +13,7 @@ BASE_DIR = os.path.dirname(
 test_loader = TestLoader()
 test_runner = TextTestRunner()
 
-# Change env variable before accessing briolette module
-os.environ['CELERY_CONFIG_MODULE'] = 'briolette.config_test'
-# Briolette module MUST be accessed only after changes
-# in environment variables
-from briolette import setup_logging
+os.environ['CELERY_CONFIG_MODULE'] = 'pmworker.config.test'
 
 setup_logging()
 

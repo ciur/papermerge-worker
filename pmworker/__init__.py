@@ -2,8 +2,8 @@ import yaml
 import os
 import logging
 import logging.config
-from briolette import endpoint
-from briolette.settings import get_settings
+from pmworker import endpoint
+from pmworker.settings import get_settings
 
 ENG = "eng"
 DEU = "deu"
