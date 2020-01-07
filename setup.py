@@ -9,6 +9,7 @@ setup(
     version="1.0.0",
     author="Eugen Ciur",
     author_email="eugen@papermerge.com",
+    url="https://github.com/ciur/papermerge-worker",
     description=("Papermerge worker - extract OCR text documents"),
     long_description=long_description,
     long_description_content_type="text/markdown",
