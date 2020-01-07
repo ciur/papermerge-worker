@@ -1,0 +1,3 @@
+celery
+boto3
+pyyaml
