@@ -1,3 +1,6 @@
 *.pyc
 tmp/
 __pycache__
+build/
+dist/
+pmworker.egg-info/
