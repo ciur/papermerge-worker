@@ -79,7 +79,7 @@ def upload_img(page_url):
     )
 
 
-def upload_document(doc_ep):
+def upload_document_to_s3(doc_ep):
     s3_url = doc_ep.url(ep=Endpoint.S3)
     local_url = doc_ep.url()
     bucketname = get_bucketname(s3_url)
