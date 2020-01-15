@@ -275,7 +275,6 @@ def copy2doc_url(
     logger.debug(
         f"copy2doc_url {src_file_path} to {doc_url}"
     )
-
     shutil.copyfile(
         src_file_path,
         doc_url

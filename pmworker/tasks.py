@@ -84,6 +84,7 @@ def ocr_page(
     lang,
     s3_upload=True,
     s3_download=True,
+    test_local_alternative=None
 ):
     # A task being bound (bind=True) means the first argument
     # to the task will always be the
@@ -114,7 +115,11 @@ def ocr_page(
             f"doc_ep={doc_ep.url()} does not exists."
             f"Processing with download."
         ))
-        download(doc_ep, s3_download=s3_download)
+        download(
+            doc_ep,
+            s3_download=s3_download,
+            test_local_alternative=test_local_alternative
+        )
     else:
         logger.debug(f"Local copy {doc_ep.url()} exists.")
 
