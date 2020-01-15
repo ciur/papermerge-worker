@@ -23,7 +23,7 @@ class TestTask(unittest.TestCase):
             document_id=1,
             file_name="input.de.pdf",
             page_num=1,
-            lang="de",
+            lang="deu",
             s3_upload=False,
             s3_download=False,
             test_local_alternative=abs_path_input_pdf

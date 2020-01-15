@@ -158,7 +158,7 @@ class TestPageEp(unittest.TestCase):
     def test_hocr_exists(self):
         local_media = os.path.join(
             os.path.dirname(os.path.dirname(__file__)),
-            "data",
+            "test",
             "media"
         )
         remote_ep = Endpoint("s3:/test-papermerge/")

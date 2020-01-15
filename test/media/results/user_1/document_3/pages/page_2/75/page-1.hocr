@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 4.1.0' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "/home/eugen/github/ciur/papermerge-worker/run/media/results/user_1/document_1/pages/page_1/75/page-1.jpg"; bbox 0 0 930 1317; ppageno 0'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 146 44 782 91">
+    <p class='ocr_par' id='par_1_1' lang='deu' title="bbox 146 44 782 91">
+     <span class='ocr_line' id='line_1_1' title="bbox 146 44 782 91; baseline 0.008 -7; x_size 60; x_descenders 15; x_ascenders 14.999999">
+      <span class='ocrx_word' id='word_1_1' title='bbox 146 44 217 84; x_wconf 40'>120</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 247 45 355 91; x_wconf 0'>|reswen,</span>
+      <span class='ocrx_word' id='word_1_3' title='bbox 608 44 782 89; x_wconf 92'>DEVK</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_2' title="bbox 146 92 782 113">
+    <p class='ocr_par' id='par_1_2' lang='deu' title="bbox 146 92 782 113">
+     <span class='ocr_line' id='line_1_2' title="bbox 146 92 782 113; baseline -0.002 -1; x_size 25.279999; x_descenders 5.2799997; x_ascenders 8">
+      <span class='ocrx_word' id='word_1_4' title='bbox 146 92 217 113; x_wconf 92'>JAHRE</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 214 88 236 122; x_wconf 50'>!</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 247 96 287 113; x_wconf 87'>nah.</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 608 99 782 112; x_wconf 91'>VERSICHERUNGEN</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_3' title="bbox 0 152 930 159">
+    <p class='ocr_par' id='par_1_3' lang='deu' title="bbox 0 152 930 159">
+     <span class='ocr_line' id='line_1_3' title="bbox 0 152 930 159; baseline 0 0; x_size 3.5; x_descenders -1.75; x_ascenders 1.75">
+      <span class='ocrx_word' id='word_1_8' title='bbox 0 152 930 159; x_wconf 95'> </span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_4' title="bbox 53 1205 60 1212">
+    <p class='ocr_par' id='par_1_4' lang='deu' title="bbox 53 1205 60 1212">
+     <span class='ocr_line' id='line_1_4' title="bbox 53 1205 60 1212; textangle 90; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_9' title='bbox 53 1205 60 1212; x_wconf 27'>8</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_5' title="bbox 53 1222 60 1271">
+    <p class='ocr_par' id='par_1_5' lang='deu' title="bbox 53 1222 60 1271">
+     <span class='ocr_line' id='line_1_5' title="bbox 53 1222 60 1271; textangle 90; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_10' title='bbox 53 1222 60 1271; x_wconf 4'>m0000207</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_6' title="bbox 89 221 384 233">
+    <p class='ocr_par' id='par_1_6' lang='deu' title="bbox 89 221 384 233">
+     <span class='ocr_line' id='line_1_6' title="bbox 89 221 384 233; baseline 0.003 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_11' title='bbox 89 221 238 231; x_wconf 83'>Produktinformationsblatt</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 243 221 259 231; x_wconf 91'>für</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 263 221 280 231; x_wconf 91'>die</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 286 221 384 233; x_wconf 82'>Kfz-Versicherung</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_7' title="bbox 89 253 589 264">
+    <p class='ocr_par' id='par_1_7' lang='deu' title="bbox 89 253 589 264">
+     <span class='ocr_line' id='line_1_7' title="bbox 89 253 589 264; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_15' title='bbox 89 253 109 262; x_wconf 89'>Wir</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 114 253 156 262; x_wconf 89'>danken</span>
+      <span class='ocrx_word' id='word_1_17' title='bbox 162 253 193 262; x_wconf 88'>Ihnen</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 198 253 214 262; x_wconf 88'>für</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 219 253 234 262; x_wconf 93'>Ihr</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 239 253 291 262; x_wconf 92'>Interesse</span>
+      <span class='ocrx_word' id='word_1_21' title='bbox 296 255 309 262; x_wconf 92'>an</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 314 255 343 262; x_wconf 92'>einer</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 348 253 380 262; x_wconf 93'>DEVK</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 385 253 483 264; x_wconf 92'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 489 253 509 262; x_wconf 92'>und</span>
+      <span class='ocrx_word' id='word_1_26' title='bbox 508 243 530 271; x_wconf 92'>Ihr</span>
+      <span class='ocrx_word' id='word_1_27' title='bbox 529 253 589 262; x_wconf 74'>Vertrauen,</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_8' title="bbox 90 279 878 325">
+    <p class='ocr_par' id='par_1_8' lang='deu' title="bbox 90 279 878 325">
+     <span class='ocr_line' id='line_1_8' title="bbox 90 279 862 291; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_28' title='bbox 90 279 124 288; x_wconf 91'>Damit</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 129 279 146 288; x_wconf 91'>Sie</span>
+      <span class='ocrx_word' id='word_1_30' title='bbox 151 279 172 289; x_wconf 88'>sich</span>
+      <span class='ocrx_word' id='word_1_31' title='bbox 178 282 209 288; x_wconf 88'>einen</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 214 281 250 289; x_wconf 87'>ersten</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 256 279 310 289; x_wconf 87'>Überblick</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 315 279 341 288; x_wconf 91'>über</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 346 279 362 289; x_wconf 91'>die</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 367 282 388 288; x_wconf 86'>von</span>
+      <span class='ocrx_word' id='word_1_37' title='bbox 394 279 425 288; x_wconf 86'>Ihnen</span>
+      <span class='ocrx_word' id='word_1_38' title='bbox 431 282 440 288; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_39' title='bbox 445 279 494 289; x_wconf 92'>Aussicht</span>
+      <span class='ocrx_word' id='word_1_40' title='bbox 499 282 572 291; x_wconf 75'>genommene</span>
+      <span class='ocrx_word' id='word_1_41' title='bbox 578 279 675 291; x_wconf 84'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_42' title='bbox 680 279 747 289; x_wconf 91'>verschaffen</span>
+      <span class='ocrx_word' id='word_1_43' title='bbox 753 279 798 290; x_wconf 92'>können,</span>
+      <span class='ocrx_word' id='word_1_44' title='bbox 804 279 839 288; x_wconf 91'>haben</span>
+      <span class='ocrx_word' id='word_1_45' title='bbox 844 282 862 288; x_wconf 93'>wir</span>
+     </span>
+     <span class='ocr_line' id='line_1_9' title="bbox 90 296 856 308; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_46' title='bbox 90 297 123 306; x_wconf 90'>hierzu</span>
+      <span class='ocrx_word' id='word_1_47' title='bbox 129 297 177 308; x_wconf 83'>wichtige</span>
+      <span class='ocrx_word' id='word_1_48' title='bbox 183 296 265 306; x_wconf 89'>Informationen</span>
+      <span class='ocrx_word' id='word_1_49' title='bbox 270 296 286 306; x_wconf 92'>für</span>
+      <span class='ocrx_word' id='word_1_50' title='bbox 291 296 308 306; x_wconf 92'>Sie</span>
+      <span class='ocrx_word' id='word_1_51' title='bbox 313 297 423 308; x_wconf 82'>zusammengestellt.</span>
+      <span class='ocrx_word' id='word_1_52' title='bbox 429 297 459 306; x_wconf 92'>Diese</span>
+      <span class='ocrx_word' id='word_1_53' title='bbox 465 297 488 306; x_wconf 89'>sind</span>
+      <span class='ocrx_word' id='word_1_54' title='bbox 493 297 531 308; x_wconf 92'>jedoch</span>
+      <span class='ocrx_word' id='word_1_55' title='bbox 536 297 565 306; x_wconf 92'>nicht</span>
+      <span class='ocrx_word' id='word_1_56' title='bbox 570 296 647 306; x_wconf 92'>abschließend</span>
+      <span class='ocrx_word' id='word_1_57' title='bbox 653 297 674 306; x_wconf 89'>und</span>
+      <span class='ocrx_word' id='word_1_58' title='bbox 679 297 718 306; x_wconf 89'>dienen</span>
+      <span class='ocrx_word' id='word_1_59' title='bbox 723 297 739 306; x_wconf 93'>als</span>
+      <span class='ocrx_word' id='word_1_60' title='bbox 744 299 767 306; x_wconf 88'>eine</span>
+      <span class='ocrx_word' id='word_1_61' title='bbox 773 298 801 306; x_wconf 92'>erste</span>
+      <span class='ocrx_word' id='word_1_62' title='bbox 806 297 856 306; x_wconf 92'>Orientie-</span>
+     </span>
+     <span class='ocr_line' id='line_1_10' title="bbox 90 314 878 325; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_63' title='bbox 90 314 151 325; x_wconf 42'>rungshilfe,</span>
+      <span class='ocrx_word' id='word_1_64' title='bbox 157 314 176 323; x_wconf 92'>Der</span>
+      <span class='ocrx_word' id='word_1_65' title='bbox 181 305 251 333; x_wconf 88'>vollständige</span>
+      <span class='ocrx_word' id='word_1_66' title='bbox 255 305 337 333; x_wconf 91'>Vertragsinhalt</span>
+      <span class='ocrx_word' id='word_1_67' title='bbox 341 305 375 333; x_wconf 92'>ergibt</span>
+      <span class='ocrx_word' id='word_1_68' title='bbox 380 314 401 323; x_wconf 89'>sich</span>
+      <span class='ocrx_word' id='word_1_69' title='bbox 407 316 426 323; x_wconf 89'>aus</span>
+      <span class='ocrx_word' id='word_1_70' title='bbox 431 314 456 323; x_wconf 93'>dem</span>
+      <span class='ocrx_word' id='word_1_71' title='bbox 461 314 503 325; x_wconf 92'>Antrag,</span>
+      <span class='ocrx_word' id='word_1_72' title='bbox 509 314 533 323; x_wconf 91'>dem</span>
+      <span class='ocrx_word' id='word_1_73' title='bbox 537 314 657 325; x_wconf 92'>Versicherungsschein</span>
+      <span class='ocrx_word' id='word_1_74' title='bbox 663 314 683 323; x_wconf 92'>und</span>
+      <span class='ocrx_word' id='word_1_75' title='bbox 689 314 710 323; x_wconf 90'>den</span>
+      <span class='ocrx_word' id='word_1_76' title='bbox 714 314 878 325; x_wconf 82'>Versicherungsbedingungen.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_9' title="bbox 90 346 846 375">
+    <p class='ocr_par' id='par_1_9' lang='deu' title="bbox 90 346 846 375">
+     <span class='ocr_line' id='line_1_11' title="bbox 90 346 419 358; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_77' title='bbox 90 347 94 356; x_wconf 30'>1.._</span>
+      <span class='ocrx_word' id='word_1_78' title='bbox 110 338 163 366; x_wconf 79'>Welchen</span>
+      <span class='ocrx_word' id='word_1_79' title='bbox 168 338 293 366; x_wconf 89'>Versicherungsvertrag</span>
+      <span class='ocrx_word' id='word_1_80' title='bbox 299 346 334 356; x_wconf 91'>bieten</span>
+      <span class='ocrx_word' id='word_1_81' title='bbox 339 347 358 356; x_wconf 91'>wir</span>
+      <span class='ocrx_word' id='word_1_82' title='bbox 363 347 394 356; x_wconf 90'>Ihnen</span>
+      <span class='ocrx_word' id='word_1_83' title='bbox 400 346 419 356; x_wconf 90'>an?</span>
+     </span>
+     <span class='ocr_line' id='line_1_12' title="bbox 115 364 846 375; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_84' title='bbox 115 364 136 373; x_wconf 60'>Wir</span>
+      <span class='ocrx_word' id='word_1_85' title='bbox 141 364 175 373; x_wconf 91'>bieten</span>
+      <span class='ocrx_word' id='word_1_86' title='bbox 181 364 212 373; x_wconf 91'>Ihnen</span>
+      <span class='ocrx_word' id='word_1_87' title='bbox 217 366 241 373; x_wconf 89'>eine</span>
+      <span class='ocrx_word' id='word_1_88' title='bbox 246 364 342 375; x_wconf 77'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_89' title='bbox 348 366 364 375; x_wconf 91'>an,</span>
+      <span class='ocrx_word' id='word_1_90' title='bbox 369 364 386 373; x_wconf 93'>die</span>
+      <span class='ocrx_word' id='word_1_91' title='bbox 390 366 400 375; x_wconf 93'>je</span>
+      <span class='ocrx_word' id='word_1_92' title='bbox 405 364 431 373; x_wconf 89'>nach</span>
+      <span class='ocrx_word' id='word_1_93' title='bbox 437 364 468 373; x_wconf 89'>Inhalt</span>
+      <span class='ocrx_word' id='word_1_94' title='bbox 473 364 492 373; x_wconf 93'>des</span>
+      <span class='ocrx_word' id='word_1_95' title='bbox 496 364 625 375; x_wconf 85'>Versicherungsvertrags</span>
+      <span class='ocrx_word' id='word_1_96' title='bbox 630 364 680 375; x_wconf 85'>folgende</span>
+      <span class='ocrx_word' id='word_1_97' title='bbox 684 364 795 375; x_wconf 91'>Versicherungsarten</span>
+      <span class='ocrx_word' id='word_1_98' title='bbox 800 364 846 373; x_wconf 87'>umfasst:</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_10' title="bbox 125 393 408 439">
+    <p class='ocr_par' id='par_1_10' lang='deu' title="bbox 125 392 408 439">
+     <span class='ocr_line' id='line_1_13' title="bbox 143 393 300 405; baseline 0.006 -0.897; x_size 18; x_descenders 5; x_ascenders 3">
+      <span class='ocrx_word' id='word_1_99' title='bbox 143 393 300 405; x_wconf 76'>Kfz-Haftpflichtversicherung</span>
+     </span>
+     <span class='ocr_line' id='line_1_14' title="bbox 125 409 408 422; baseline 0 -2; x_size 18; x_descenders 5; x_ascenders 3">
+      <span class='ocrx_word' id='word_1_100' title='bbox 125 409 138 421; x_wconf 55'>D]</span>
+      <span class='ocrx_word' id='word_1_101' title='bbox 143 411 252 422; x_wconf 55'>Kaskoversicherung</span>
+      <span class='ocrx_word' id='word_1_102' title='bbox 258 411 314 421; x_wconf 84'>(Teilkasko</span>
+      <span class='ocrx_word' id='word_1_103' title='bbox 316 404 341 430; x_wconf 91'>oder</span>
+      <span class='ocrx_word' id='word_1_104' title='bbox 343 404 408 430; x_wconf 49'>Vollkasko)</span>
+     </span>
+     <span class='ocr_line' id='line_1_15' title="bbox 125 426 275 439; baseline -0.007 0; x_size 18; x_descenders 5; x_ascenders 3">
+      <span class='ocrx_word' id='word_1_105' title='bbox 125 426 138 439; x_wconf 40'>O</span>
+      <span class='ocrx_word' id='word_1_106' title='bbox 143 428 275 439; x_wconf 40'>Kiz-Unfallversicherung</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_11' title="bbox 116 462 865 491">
+    <p class='ocr_par' id='par_1_11' lang='deu' title="bbox 116 462 865 491">
+     <span class='ocr_line' id='line_1_16' title="bbox 116 462 865 474; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_107' title='bbox 116 462 177 474; x_wconf 66'>Grundlage</span>
+      <span class='ocrx_word' id='word_1_108' title='bbox 183 462 209 471; x_wconf 87'>Ihrer</span>
+      <span class='ocrx_word' id='word_1_109' title='bbox 214 462 311 474; x_wconf 87'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_110' title='bbox 317 462 340 472; x_wconf 90'>sind</span>
+      <span class='ocrx_word' id='word_1_111' title='bbox 346 453 364 481; x_wconf 88'>der</span>
+      <span class='ocrx_word' id='word_1_112' title='bbox 368 453 411 481; x_wconf 91'>Antrag,</span>
+      <span class='ocrx_word' id='word_1_113' title='bbox 416 453 434 481; x_wconf 91'>der</span>
+      <span class='ocrx_word' id='word_1_114' title='bbox 438 462 557 474; x_wconf 91'>Versicherungsschein</span>
+      <span class='ocrx_word' id='word_1_115' title='bbox 563 462 584 472; x_wconf 91'>und</span>
+      <span class='ocrx_word' id='word_1_116' title='bbox 590 465 619 472; x_wconf 93'>seine</span>
+      <span class='ocrx_word' id='word_1_117' title='bbox 625 462 684 474; x_wconf 91'>Nachträge</span>
+      <span class='ocrx_word' id='word_1_118' title='bbox 689 465 722 472; x_wconf 91'>sowie</span>
+      <span class='ocrx_word' id='word_1_119' title='bbox 728 462 744 472; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_120' title='bbox 749 462 822 474; x_wconf 91'>Allgemeinen</span>
+      <span class='ocrx_word' id='word_1_121' title='bbox 828 462 865 472; x_wconf 87'>Bedin-</span>
+     </span>
+     <span class='ocr_line' id='line_1_17' title="bbox 116 479 671 491; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_122' title='bbox 116 482 159 491; x_wconf 79'>gungen</span>
+      <span class='ocrx_word' id='word_1_123' title='bbox 157 470 181 498; x_wconf 92'>für</span>
+      <span class='ocrx_word' id='word_1_124' title='bbox 185 480 202 489; x_wconf 90'>die</span>
+      <span class='ocrx_word' id='word_1_125' title='bbox 208 479 305 491; x_wconf 92'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_126' title='bbox 311 479 343 490; x_wconf 76'>(AKB)</span>
+      <span class='ocrx_word' id='word_1_127' title='bbox 344 470 367 498; x_wconf 90'>mit</span>
+      <span class='ocrx_word' id='word_1_128' title='bbox 371 470 391 498; x_wconf 90'>den</span>
+      <span class='ocrx_word' id='word_1_129' title='bbox 397 480 470 489; x_wconf 89'>vereinbarten</span>
+      <span class='ocrx_word' id='word_1_130' title='bbox 476 479 521 489; x_wconf 92'>Sonder-</span>
+      <span class='ocrx_word' id='word_1_131' title='bbox 526 480 547 489; x_wconf 92'>und</span>
+      <span class='ocrx_word' id='word_1_132' title='bbox 552 480 671 491; x_wconf 90'>Zusatzbedingungen.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_12' title="bbox 89 514 873 594">
+    <p class='ocr_par' id='par_1_12' lang='deu' title="bbox 89 514 226 523">
+     <span class='ocr_line' id='line_1_18' title="bbox 89 514 226 523; baseline 0 0; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_133' title='bbox 89 514 95 523; x_wconf 52'>2.</span>
+      <span class='ocrx_word' id='word_1_134' title='bbox 115 514 140 523; x_wconf 52'>Was</span>
+      <span class='ocrx_word' id='word_1_135' title='bbox 154 515 158 523; x_wconf 89'>ist</span>
+      <span class='ocrx_word' id='word_1_136' title='bbox 163 514 226 523; x_wconf 92'>versichert?</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_13' lang='deu' title="bbox 89 531 873 594">
+     <span class='ocr_line' id='line_1_19' title="bbox 89 531 862 543; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_137' title='bbox 89 531 104 540; x_wconf 50'>2.1</span>
+      <span class='ocrx_word' id='word_1_138' title='bbox 116 531 134 540; x_wconf 50'>Die</span>
+      <span class='ocrx_word' id='word_1_139' title='bbox 139 531 299 543; x_wconf 68'>Kfz-Haftpflichtversicherung</span>
+      <span class='ocrx_word' id='word_1_140' title='bbox 304 531 319 540; x_wconf 93'>als</span>
+      <span class='ocrx_word' id='word_1_141' title='bbox 325 531 435 543; x_wconf 92'>Pflichtversicherung</span>
+      <span class='ocrx_word' id='word_1_142' title='bbox 441 531 481 540; x_wconf 91'>schützt</span>
+      <span class='ocrx_word' id='word_1_143' title='bbox 486 531 503 540; x_wconf 89'>Sie</span>
+      <span class='ocrx_word' id='word_1_144' title='bbox 509 531 530 540; x_wconf 89'>und</span>
+      <span class='ocrx_word' id='word_1_145' title='bbox 536 531 618 540; x_wconf 91'>mitversicherte</span>
+      <span class='ocrx_word' id='word_1_146' title='bbox 623 531 677 540; x_wconf 90'>Personen</span>
+      <span class='ocrx_word' id='word_1_147' title='bbox 682 534 701 540; x_wconf 91'>vor</span>
+      <span class='ocrx_word' id='word_1_148' title='bbox 706 531 862 542; x_wconf 90'>Schadenersatzansprüchen,</span>
+     </span>
+     <span class='ocr_line' id='line_1_20' title="bbox 115 548 863 560; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_149' title='bbox 115 551 147 558; x_wconf 44'>‚wenn</span>
+      <span class='ocrx_word' id='word_1_150' title='bbox 152 548 184 558; x_wconf 90'>durch</span>
+      <span class='ocrx_word' id='word_1_151' title='bbox 190 548 210 557; x_wconf 93'>den</span>
+      <span class='ocrx_word' id='word_1_152' title='bbox 216 548 272 557; x_wconf 92'>Gebrauch</span>
+      <span class='ocrx_word' id='word_1_153' title='bbox 278 548 297 558; x_wconf 93'>des</span>
+      <span class='ocrx_word' id='word_1_154' title='bbox 303 539 362 567; x_wconf 91'>Fahrzeugs</span>
+      <span class='ocrx_word' id='word_1_155' title='bbox 366 539 408 567; x_wconf 92'>Andere</span>
+      <span class='ocrx_word' id='word_1_156' title='bbox 414 548 477 560; x_wconf 92'>geschädigt</span>
+      <span class='ocrx_word' id='word_1_157' title='bbox 482 548 525 557; x_wconf 92'>werden</span>
+      <span class='ocrx_word' id='word_1_158' title='bbox 531 548 611 559; x_wconf 87'>(Abschnitt</span>
+      <span class='ocrx_word' id='word_1_159' title='bbox 592 539 614 567; x_wconf 88'>A.1</span>
+      <span class='ocrx_word' id='word_1_160' title='bbox 618 548 637 558; x_wconf 88'>der</span>
+      <span class='ocrx_word' id='word_1_161' title='bbox 641 539 670 567; x_wconf 62'>AKB}.</span>
+      <span class='ocrx_word' id='word_1_162' title='bbox 679 548 697 557; x_wconf 91'>Die</span>
+      <span class='ocrx_word' id='word_1_163' title='bbox 703 548 801 560; x_wconf 90'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_164' title='bbox 806 548 834 558; x_wconf 92'>Auto</span>
+      <span class='ocrx_word' id='word_1_165' title='bbox 839 548 863 558; x_wconf 92'>Plus</span>
+     </span>
+     <span class='ocr_line' id='line_1_21' title="bbox 116 565 873 577; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_166' title='bbox 116 566 156 575; x_wconf 79'>enthält</span>
+      <span class='ocrx_word' id='word_1_167' title='bbox 161 565 187 575; x_wconf 90'>auch</span>
+      <span class='ocrx_word' id='word_1_168' title='bbox 193 568 224 575; x_wconf 90'>einen</span>
+      <span class='ocrx_word' id='word_1_169' title='bbox 229 565 324 576; x_wconf 92'>Autoschutzbrief,</span>
+      <span class='ocrx_word' id='word_1_170' title='bbox 329 566 347 575; x_wconf 93'>der</span>
+      <span class='ocrx_word' id='word_1_171' title='bbox 352 566 410 575; x_wconf 91'>zahlreiche</span>
+      <span class='ocrx_word' id='word_1_172' title='bbox 416 566 478 577; x_wconf 92'>Leistungen</span>
+      <span class='ocrx_word' id='word_1_173' title='bbox 484 556 538 584; x_wconf 88'>entweder</span>
+      <span class='ocrx_word' id='word_1_174' title='bbox 537 556 559 584; x_wconf 92'>als</span>
+      <span class='ocrx_word' id='word_1_175' title='bbox 564 565 606 575; x_wconf 93'>Service</span>
+      <span class='ocrx_word' id='word_1_176' title='bbox 611 566 637 575; x_wconf 83'>oder</span>
+      <span class='ocrx_word' id='word_1_177' title='bbox 643 566 717 575; x_wconf 88'>Kostenersatz</span>
+      <span class='ocrx_word' id='word_1_178' title='bbox 722 565 754 575; x_wconf 91'>bietet</span>
+      <span class='ocrx_word' id='word_1_179' title='bbox 759 565 793 576; x_wconf 23'>(siehe</span>
+      <span class='ocrx_word' id='word_1_180' title='bbox 798 565 873 575; x_wconf 92'>Zusatzbedin-</span>
+     </span>
+     <span class='ocr_line' id='line_1_22' title="bbox 116 583 407 594; baseline -0.007 0; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_181' title='bbox 116 585 159 594; x_wconf 86'>gungen</span>
+      <span class='ocrx_word' id='word_1_182' title='bbox 164 583 180 592; x_wconf 91'>für</span>
+      <span class='ocrx_word' id='word_1_183' title='bbox 185 583 202 592; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_184' title='bbox 208 583 239 592; x_wconf 92'>DEVK</span>
+      <span class='ocrx_word' id='word_1_185' title='bbox 245 583 342 594; x_wconf 83'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_186' title='bbox 347 583 374 592; x_wconf 91'>Auto</span>
+      <span class='ocrx_word' id='word_1_187' title='bbox 380 583 407 593; x_wconf 62'>Plus).</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_13' title="bbox 89 617 876 697">
+    <p class='ocr_par' id='par_1_14' lang='deu' title="bbox 89 617 876 697">
+     <span class='ocr_line' id='line_1_23' title="bbox 89 617 876 629; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_188' title='bbox 89 617 105 626; x_wconf 14'>2.2</span>
+      <span class='ocrx_word' id='word_1_189' title='bbox 116 617 134 626; x_wconf 14'>Die</span>
+      <span class='ocrx_word' id='word_1_190' title='bbox 139 617 249 628; x_wconf 90'>Kaskoversicherung</span>
+      <span class='ocrx_word' id='word_1_191' title='bbox 255 617 325 628; x_wconf 92'>(Abschnitt</span>
+      <span class='ocrx_word' id='word_1_192' title='bbox 330 617 335 626; x_wconf 88'>A.2</span>
+      <span class='ocrx_word' id='word_1_193' title='bbox 340 617 359 626; x_wconf 89'>der</span>
+      <span class='ocrx_word' id='word_1_194' title='bbox 363 608 391 636; x_wconf 87'>AKB)</span>
+      <span class='ocrx_word' id='word_1_195' title='bbox 397 618 435 626; x_wconf 91'>ersetzt</span>
+      <span class='ocrx_word' id='word_1_196' title='bbox 440 617 492 628; x_wconf 91'>Schäden,</span>
+      <span class='ocrx_word' id='word_1_197' title='bbox 497 617 514 626; x_wconf 90'>die</span>
+      <span class='ocrx_word' id='word_1_198' title='bbox 520 617 551 626; x_wconf 91'>Ihnen</span>
+      <span class='ocrx_word' id='word_1_199' title='bbox 556 617 588 626; x_wconf 91'>durch</span>
+      <span class='ocrx_word' id='word_1_200' title='bbox 594 617 610 626; x_wconf 93'>die</span>
+      <span class='ocrx_word' id='word_1_201' title='bbox 616 617 701 629; x_wconf 91'>Beschädigung,</span>
+      <span class='ocrx_word' id='word_1_202' title='bbox 706 617 723 626; x_wconf 93'>die</span>
+      <span class='ocrx_word' id='word_1_203' title='bbox 728 617 792 629; x_wconf 91'>Zerstörung</span>
+      <span class='ocrx_word' id='word_1_204' title='bbox 798 608 824 636; x_wconf 90'>oder</span>
+      <span class='ocrx_word' id='word_1_205' title='bbox 828 608 848 636; x_wconf 90'>den</span>
+      <span class='ocrx_word' id='word_1_206' title='bbox 853 617 876 626; x_wconf 92'>Ver-</span>
+     </span>
+     <span class='ocr_line' id='line_1_24' title="bbox 116 634 787 646; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_207' title='bbox 116 634 136 643; x_wconf 80'>Iust</span>
+      <span class='ocrx_word' id='word_1_208' title='bbox 142 634 169 643; x_wconf 92'>Ihres</span>
+      <span class='ocrx_word' id='word_1_209' title='bbox 174 634 220 646; x_wconf 91'>eigenen</span>
+      <span class='ocrx_word' id='word_1_210' title='bbox 226 634 284 646; x_wconf 91'>Fahrzeugs</span>
+      <span class='ocrx_word' id='word_1_211' title='bbox 296 634 367 644; x_wconf 89'>einschließlich</span>
+      <span class='ocrx_word' id='word_1_212' title='bbox 373 635 391 643; x_wconf 91'>der</span>
+      <span class='ocrx_word' id='word_1_213' title='bbox 396 634 486 644; x_wconf 91'>mitversicherten</span>
+      <span class='ocrx_word' id='word_1_214' title='bbox 492 634 569 646; x_wconf 89'>Fahrzeugteile</span>
+      <span class='ocrx_word' id='word_1_215' title='bbox 574 634 595 643; x_wconf 89'>und</span>
+      <span class='ocrx_word' id='word_1_216' title='bbox 601 634 726 646; x_wconf 91'>Fahrzeugzubehörteile</span>
+      <span class='ocrx_word' id='word_1_217' title='bbox 731 635 787 643; x_wconf 87'>entstehen.</span>
+     </span>
+     <span class='ocr_line' id='line_1_25' title="bbox 116 651 873 663; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_218' title='bbox 116 651 123 660; x_wconf 89'>Die</span>
+      <span class='ocrx_word' id='word_1_219' title='bbox 139 651 191 661; x_wconf 90'>Teilkasko</span>
+      <span class='ocrx_word' id='word_1_220' title='bbox 197 651 226 661; x_wconf 88'>deckt</span>
+      <span class='ocrx_word' id='word_1_221' title='bbox 231 651 280 661; x_wconf 93'>Schäden</span>
+      <span class='ocrx_word' id='word_1_222' title='bbox 285 654 290 661; x_wconf 92'>z.</span>
+      <span class='ocrx_word' id='word_1_223' title='bbox 299 651 305 660; x_wconf 92'>B.</span>
+      <span class='ocrx_word' id='word_1_224' title='bbox 314 651 346 661; x_wconf 92'>durch</span>
+      <span class='ocrx_word' id='word_1_225' title='bbox 352 651 428 663; x_wconf 90'>Entwendung,</span>
+      <span class='ocrx_word' id='word_1_226' title='bbox 434 651 519 663; x_wconf 88'>Naturgewalten</span>
+      <span class='ocrx_word' id='word_1_227' title='bbox 525 651 548 662; x_wconf 88'>(wie</span>
+      <span class='ocrx_word' id='word_1_228' title='bbox 553 651 592 662; x_wconf 93'>Sturm,</span>
+      <span class='ocrx_word' id='word_1_229' title='bbox 598 651 634 663; x_wconf 87'>Hagel,</span>
+      <span class='ocrx_word' id='word_1_230' title='bbox 639 651 708 663; x_wconf 46'>Blitzschlag),</span>
+      <span class='ocrx_word' id='word_1_231' title='bbox 713 651 771 661; x_wconf 91'>Glasbruch</span>
+      <span class='ocrx_word' id='word_1_232' title='bbox 776 651 803 661; x_wconf 91'>oder</span>
+      <span class='ocrx_word' id='word_1_233' title='bbox 808 651 873 661; x_wconf 92'>Marderbiss.</span>
+     </span>
+     <span class='ocr_line' id='line_1_26' title="bbox 116 668 861 680; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_234' title='bbox 116 668 134 678; x_wconf 89'>Die</span>
+      <span class='ocrx_word' id='word_1_235' title='bbox 139 668 194 678; x_wconf 89'>Vollkasko</span>
+      <span class='ocrx_word' id='word_1_236' title='bbox 200 659 245 687; x_wconf 87'>umfasst</span>
+      <span class='ocrx_word' id='word_1_237' title='bbox 250 669 267 678; x_wconf 87'>die</span>
+      <span class='ocrx_word' id='word_1_238' title='bbox 273 668 336 680; x_wconf 91'>Leistungen</span>
+      <span class='ocrx_word' id='word_1_239' title='bbox 336 659 359 687; x_wconf 68'>der</span>
+      <span class='ocrx_word' id='word_1_240' title='bbox 358 669 414 678; x_wconf 68'>Teilkasko</span>
+      <span class='ocrx_word' id='word_1_241' title='bbox 420 669 441 678; x_wconf 89'>und</span>
+      <span class='ocrx_word' id='word_1_242' title='bbox 447 669 479 678; x_wconf 89'>bietet</span>
+      <span class='ocrx_word' id='word_1_243' title='bbox 484 669 529 678; x_wconf 93'>darüber</span>
+      <span class='ocrx_word' id='word_1_244' title='bbox 535 669 572 678; x_wconf 93'>hinaus</span>
+      <span class='ocrx_word' id='word_1_245' title='bbox 576 669 695 680; x_wconf 90'>Versicherungsschutz</span>
+      <span class='ocrx_word' id='word_1_246' title='bbox 701 669 717 678; x_wconf 93'>bei</span>
+      <span class='ocrx_word' id='word_1_247' title='bbox 723 668 809 679; x_wconf 89'>Unfallschäden,</span>
+      <span class='ocrx_word' id='word_1_248' title='bbox 814 669 840 678; x_wconf 89'>auch</span>
+      <span class='ocrx_word' id='word_1_249' title='bbox 845 669 861 678; x_wconf 90'>für</span>
+     </span>
+     <span class='ocr_line' id='line_1_27' title="bbox 116 686 872 697; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_250' title='bbox 116 686 149 695; x_wconf 90'>selbst</span>
+      <span class='ocrx_word' id='word_1_251' title='bbox 154 686 228 695; x_wconf 92'>verschuldete</span>
+      <span class='ocrx_word' id='word_1_252' title='bbox 234 686 278 696; x_wconf 90'>Unfälle,</span>
+      <span class='ocrx_word' id='word_1_253' title='bbox 283 688 300 695; x_wconf 92'>am</span>
+      <span class='ocrx_word' id='word_1_254' title='bbox 306 688 351 697; x_wconf 92'>eigenen</span>
+      <span class='ocrx_word' id='word_1_255' title='bbox 357 686 409 697; x_wconf 90'>Fahrzeug</span>
+      <span class='ocrx_word' id='word_1_256' title='bbox 414 688 448 695; x_wconf 90'>sowie</span>
+      <span class='ocrx_word' id='word_1_257' title='bbox 453 686 468 695; x_wconf 90'>für</span>
+      <span class='ocrx_word' id='word_1_258' title='bbox 473 686 522 695; x_wconf 92'>Schäden</span>
+      <span class='ocrx_word' id='word_1_259' title='bbox 528 686 559 695; x_wconf 93'>durch</span>
+      <span class='ocrx_word' id='word_1_260' title='bbox 561 676 592 704; x_wconf 92'>mut-</span>
+      <span class='ocrx_word' id='word_1_261' title='bbox 596 676 623 704; x_wconf 92'>oder</span>
+      <span class='ocrx_word' id='word_1_262' title='bbox 628 686 686 697; x_wconf 85'>böswillige</span>
+      <span class='ocrx_word' id='word_1_263' title='bbox 692 686 762 697; x_wconf 90'>Handlungen</span>
+      <span class='ocrx_word' id='word_1_264' title='bbox 768 686 814 695; x_wconf 90'>fremder</span>
+      <span class='ocrx_word' id='word_1_265' title='bbox 819 686 872 695; x_wconf 87'>Personen</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_14' title="bbox 289 637 305 643">
+    <p class='ocr_par' id='par_1_15' lang='deu' title="bbox 289 637 305 643">
+     <span class='ocr_line' id='line_1_28' title="bbox 289 637 305 643; baseline 0 0; x_size 3; x_descenders -1.5; x_ascenders 1.5">
+      <span class='ocrx_word' id='word_1_266' title='bbox 289 637 305 643; x_wconf 95'> </span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_15' title="bbox 152 651 164 660">
+    <p class='ocr_par' id='par_1_16' lang='deu' title="bbox 152 651 164 660">
+     <span class='ocr_line' id='line_1_29' title="bbox 152 651 164 660; baseline 0 657; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_267' title='bbox 152 651 164 660; x_wconf 95'> </span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_16' title="bbox 89 720 879 783">
+    <p class='ocr_par' id='par_1_17' lang='deu' title="bbox 89 720 879 783">
+     <span class='ocr_line' id='line_1_30' title="bbox 89 720 878 732; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_268' title='bbox 89 720 105 729; x_wconf 36'>2.3</span>
+      <span class='ocrx_word' id='word_1_269' title='bbox 107 711 112 739; x_wconf 36'>_</span>
+      <span class='ocrx_word' id='word_1_270' title='bbox 116 720 134 729; x_wconf 48'>Die</span>
+      <span class='ocrx_word' id='word_1_271' title='bbox 138 720 268 732; x_wconf 89'>Kfz-Unfallversicherung</span>
+      <span class='ocrx_word' id='word_1_272' title='bbox 273 720 330 731; x_wconf 80'>(Abschnitt</span>
+      <span class='ocrx_word' id='word_1_273' title='bbox 334 720 352 729; x_wconf 90'>A.3</span>
+      <span class='ocrx_word' id='word_1_274' title='bbox 357 720 375 729; x_wconf 88'>der</span>
+      <span class='ocrx_word' id='word_1_275' title='bbox 379 720 407 731; x_wconf 80'>AKB)</span>
+      <span class='ocrx_word' id='word_1_276' title='bbox 413 721 444 729; x_wconf 93'>bietet</span>
+      <span class='ocrx_word' id='word_1_277' title='bbox 448 723 471 729; x_wconf 92'>eine</span>
+      <span class='ocrx_word' id='word_1_278' title='bbox 476 720 537 729; x_wconf 90'>zusätzliche</span>
+      <span class='ocrx_word' id='word_1_279' title='bbox 541 720 599 729; x_wconf 89'>finanzielle</span>
+      <span class='ocrx_word' id='word_1_280' title='bbox 603 720 674 732; x_wconf 91'>Absicherung</span>
+      <span class='ocrx_word' id='word_1_281' title='bbox 679 720 695 729; x_wconf 91'>für</span>
+      <span class='ocrx_word' id='word_1_282' title='bbox 699 720 719 729; x_wconf 81'>alle</span>
+      <span class='ocrx_word' id='word_1_283' title='bbox 725 720 796 732; x_wconf 91'>berechtigten</span>
+      <span class='ocrx_word' id='word_1_284' title='bbox 802 720 851 729; x_wconf 90'>Insassen.</span>
+      <span class='ocrx_word' id='word_1_285' title='bbox 861 720 878 729; x_wconf 90'>Sie</span>
+     </span>
+     <span class='ocr_line' id='line_1_31' title="bbox 115 737 879 749; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_286' title='bbox 115 737 135 746; x_wconf 89'>tritt</span>
+      <span class='ocrx_word' id='word_1_287' title='bbox 140 737 160 748; x_wconf 90'>ein,</span>
+      <span class='ocrx_word' id='word_1_288' title='bbox 165 740 197 746; x_wconf 87'>wenn</span>
+      <span class='ocrx_word' id='word_1_289' title='bbox 202 737 230 746; x_wconf 87'>beim</span>
+      <span class='ocrx_word' id='word_1_290' title='bbox 236 737 291 747; x_wconf 91'>Gebrauch</span>
+      <span class='ocrx_word' id='word_1_291' title='bbox 296 737 316 747; x_wconf 90'>des</span>
+      <span class='ocrx_word' id='word_1_292' title='bbox 322 737 380 749; x_wconf 90'>Fahrzeugs</span>
+      <span class='ocrx_word' id='word_1_293' title='bbox 385 737 408 746; x_wconf 88'>eine</span>
+      <span class='ocrx_word' id='word_1_294' title='bbox 413 737 477 747; x_wconf 88'>versicherte</span>
+      <span class='ocrx_word' id='word_1_295' title='bbox 483 737 521 747; x_wconf 84'>Person</span>
+      <span class='ocrx_word' id='word_1_296' title='bbox 526 737 569 746; x_wconf 92'>verletzt</span>
+      <span class='ocrx_word' id='word_1_297' title='bbox 574 728 600 756; x_wconf 92'>oder</span>
+      <span class='ocrx_word' id='word_1_298' title='bbox 604 728 645 756; x_wconf 87'>getötet</span>
+      <span class='ocrx_word' id='word_1_299' title='bbox 650 737 675 747; x_wconf 87'>wird.</span>
+      <span class='ocrx_word' id='word_1_300' title='bbox 684 737 755 749; x_wconf 90'>Unabhängig</span>
+      <span class='ocrx_word' id='word_1_301' title='bbox 760 740 781 746; x_wconf 90'>von</span>
+      <span class='ocrx_word' id='word_1_302' title='bbox 786 737 805 747; x_wconf 93'>der</span>
+      <span class='ocrx_word' id='word_1_303' title='bbox 810 737 879 749; x_wconf 92'>Schuldfrage</span>
+     </span>
+     <span class='ocr_line' id='line_1_32' title="bbox 116 754 866 766; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_304' title='bbox 116 755 158 764; x_wconf 90'>werden</span>
+      <span class='ocrx_word' id='word_1_305' title='bbox 164 754 182 764; x_wconf 93'>auf</span>
+      <span class='ocrx_word' id='word_1_306' title='bbox 187 754 248 766; x_wconf 90'>Grundlage</span>
+      <span class='ocrx_word' id='word_1_307' title='bbox 253 755 271 764; x_wconf 91'>der</span>
+      <span class='ocrx_word' id='word_1_308' title='bbox 276 755 316 766; x_wconf 91'>jeweils</span>
+      <span class='ocrx_word' id='word_1_309' title='bbox 321 755 388 764; x_wconf 89'>versicherten</span>
+      <span class='ocrx_word' id='word_1_310' title='bbox 394 754 444 764; x_wconf 91'>Summen</span>
+      <span class='ocrx_word' id='word_1_311' title='bbox 449 755 466 764; x_wconf 90'>die</span>
+      <span class='ocrx_word' id='word_1_312' title='bbox 470 755 540 764; x_wconf 90'>vereinbarten</span>
+      <span class='ocrx_word' id='word_1_313' title='bbox 546 754 606 766; x_wconf 90'>Leistungen</span>
+      <span class='ocrx_word' id='word_1_314' title='bbox 611 754 626 764; x_wconf 91'>für</span>
+      <span class='ocrx_word' id='word_1_315' title='bbox 630 745 650 773; x_wconf 92'>den</span>
+      <span class='ocrx_word' id='word_1_316' title='bbox 656 754 732 764; x_wconf 88'>Invaliditätsfall</span>
+      <span class='ocrx_word' id='word_1_317' title='bbox 737 755 757 764; x_wconf 91'>und</span>
+      <span class='ocrx_word' id='word_1_318' title='bbox 760 745 809 773; x_wconf 84'>Todesfall</span>
+      <span class='ocrx_word' id='word_1_319' title='bbox 814 745 846 773; x_wconf 92'>sowie</span>
+      <span class='ocrx_word' id='word_1_320' title='bbox 850 754 866 764; x_wconf 91'>für</span>
+     </span>
+     <span class='ocr_line' id='line_1_33' title="bbox 116 772 332 783; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_321' title='bbox 116 772 209 783; x_wconf 92'>vorübergehende</span>
+      <span class='ocrx_word' id='word_1_322' title='bbox 213 772 281 783; x_wconf 86'>Unfallfolgen</span>
+      <span class='ocrx_word' id='word_1_323' title='bbox 286 772 332 781; x_wconf 88'>erbracht.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_17' title="bbox 428 740 447 747">
+    <p class='ocr_par' id='par_1_18' lang='deu' title="bbox 428 740 447 747">
+     <span class='ocr_line' id='line_1_34' title="bbox 428 740 447 747; baseline 0 570; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_324' title='bbox 428 740 447 747; x_wconf 95'> </span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_18' title="bbox 89 804 884 910">
+    <p class='ocr_par' id='par_1_19' lang='deu' title="bbox 89 804 884 910">
+     <span class='ocr_line' id='line_1_35' title="bbox 89 804 884 816; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_325' title='bbox 89 805 129 814; x_wconf 92'>Zudem</span>
+      <span class='ocrx_word' id='word_1_326' title='bbox 127 796 171 824; x_wconf 93'>richtet</span>
+      <span class='ocrx_word' id='word_1_327' title='bbox 175 805 197 814; x_wconf 92'>sich</span>
+      <span class='ocrx_word' id='word_1_328' title='bbox 202 805 220 814; x_wconf 93'>der</span>
+      <span class='ocrx_word' id='word_1_329' title='bbox 224 805 343 816; x_wconf 92'>Versicherungsschutz</span>
+      <span class='ocrx_word' id='word_1_330' title='bbox 348 805 374 814; x_wconf 92'>auch</span>
+      <span class='ocrx_word' id='word_1_331' title='bbox 381 805 406 814; x_wconf 91'>nach</span>
+      <span class='ocrx_word' id='word_1_332' title='bbox 412 805 430 814; x_wconf 91'>der</span>
+      <span class='ocrx_word' id='word_1_333' title='bbox 435 805 508 814; x_wconf 91'>vereinbarten</span>
+      <span class='ocrx_word' id='word_1_334' title='bbox 513 804 584 814; x_wconf 82'>Tarifvariante.</span>
+      <span class='ocrx_word' id='word_1_335' title='bbox 593 805 610 814; x_wconf 91'>Bei</span>
+      <span class='ocrx_word' id='word_1_336' title='bbox 615 805 692 814; x_wconf 90'>vereinbartem</span>
+      <span class='ocrx_word' id='word_1_337' title='bbox 698 805 796 814; x_wconf 91'>Premium-Schutz</span>
+      <span class='ocrx_word' id='word_1_338' title='bbox 800 805 816 814; x_wconf 93'>für</span>
+      <span class='ocrx_word' id='word_1_339' title='bbox 822 805 844 814; x_wconf 92'>Pkw</span>
+      <span class='ocrx_word' id='word_1_340' title='bbox 850 805 884 814; x_wconf 92'>bieten</span>
+     </span>
+     <span class='ocr_line' id='line_1_36' title="bbox 89 820 859 832; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_341' title='bbox 89 823 107 829; x_wconf 84'>wir</span>
+      <span class='ocrx_word' id='word_1_342' title='bbox 112 820 175 832; x_wconf 91'>gegenüber</span>
+      <span class='ocrx_word' id='word_1_343' title='bbox 179 820 204 830; x_wconf 91'>dem</span>
+      <span class='ocrx_word' id='word_1_344' title='bbox 210 820 300 830; x_wconf 91'>Komfort-Schutz</span>
+      <span class='ocrx_word' id='word_1_345' title='bbox 305 820 384 832; x_wconf 91'>umfangreiche</span>
+      <span class='ocrx_word' id='word_1_346' title='bbox 390 820 540 832; x_wconf 88'>Leistungsverbesserungen.</span>
+      <span class='ocrx_word' id='word_1_347' title='bbox 549 820 576 829; x_wconf 92'>Dazu</span>
+      <span class='ocrx_word' id='word_1_348' title='bbox 582 820 630 832; x_wconf 92'>gehören</span>
+      <span class='ocrx_word' id='word_1_349' title='bbox 635 823 639 829; x_wconf 91'>z.</span>
+      <span class='ocrx_word' id='word_1_350' title='bbox 648 820 654 829; x_wconf 92'>B.</span>
+      <span class='ocrx_word' id='word_1_351' title='bbox 664 823 673 829; x_wconf 92'>in</span>
+      <span class='ocrx_word' id='word_1_352' title='bbox 678 820 697 829; x_wconf 92'>der</span>
+      <span class='ocrx_word' id='word_1_353' title='bbox 702 820 859 832; x_wconf 89'>Kfz-Haftpflichtversicherung</span>
+     </span>
+     <span class='ocr_line' id='line_1_37' title="bbox 89 836 869 847; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_354' title='bbox 89 836 115 845; x_wconf 18'>auch</span>
+      <span class='ocrx_word' id='word_1_355' title='bbox 121 836 250 847; x_wconf 92'>Schutzbriefleistungen,</span>
+      <span class='ocrx_word' id='word_1_356' title='bbox 256 838 279 845; x_wconf 92'>eine</span>
+      <span class='ocrx_word' id='word_1_357' title='bbox 284 836 495 847; x_wconf 90'>Auslandsreise-Krankenversicherung</span>
+      <span class='ocrx_word' id='word_1_358' title='bbox 501 836 522 845; x_wconf 91'>und</span>
+      <span class='ocrx_word' id='word_1_359' title='bbox 527 839 544 845; x_wconf 93'>ein</span>
+      <span class='ocrx_word' id='word_1_360' title='bbox 548 836 688 845; x_wconf 92'>Ausland-Schadenschutz</span>
+      <span class='ocrx_word' id='word_1_361' title='bbox 693 836 714 845; x_wconf 93'>und</span>
+      <span class='ocrx_word' id='word_1_362' title='bbox 720 838 729 845; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_363' title='bbox 734 836 753 845; x_wconf 88'>der</span>
+      <span class='ocrx_word' id='word_1_364' title='bbox 758 836 869 847; x_wconf 88'>Kaskoversicherung</span>
+     </span>
+     <span class='ocr_line' id='line_1_38' title="bbox 89 851 884 863; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_365' title='bbox 81 842 108 870; x_wconf 90'>der</span>
+      <span class='ocrx_word' id='word_1_366' title='bbox 112 842 168 870; x_wconf 90'>Anspruch</span>
+      <span class='ocrx_word' id='word_1_367' title='bbox 174 851 192 861; x_wconf 93'>auf</span>
+      <span class='ocrx_word' id='word_1_368' title='bbox 197 852 338 863; x_wconf 92'>Neupreisentschädigung</span>
+      <span class='ocrx_word' id='word_1_369' title='bbox 345 852 360 861; x_wconf 93'>bis</span>
+      <span class='ocrx_word' id='word_1_370' title='bbox 366 854 377 861; x_wconf 93'>zu</span>
+      <span class='ocrx_word' id='word_1_371' title='bbox 383 852 396 861; x_wconf 93'>24</span>
+      <span class='ocrx_word' id='word_1_372' title='bbox 402 852 454 861; x_wconf 89'>Monaten</span>
+      <span class='ocrx_word' id='word_1_373' title='bbox 460 852 476 861; x_wconf 93'>bei</span>
+      <span class='ocrx_word' id='word_1_374' title='bbox 482 852 550 862; x_wconf 92'>Ersterwerb,</span>
+      <span class='ocrx_word' id='word_1_375' title='bbox 555 852 572 861; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_376' title='bbox 578 852 670 863; x_wconf 91'>Mitversicherung</span>
+      <span class='ocrx_word' id='word_1_377' title='bbox 676 854 696 861; x_wconf 88'>von</span>
+      <span class='ocrx_word' id='word_1_378' title='bbox 702 854 715 861; x_wconf 88'>im</span>
+      <span class='ocrx_word' id='word_1_379' title='bbox 721 851 772 863; x_wconf 93'>Fahrzeug</span>
+      <span class='ocrx_word' id='word_1_380' title='bbox 777 852 842 861; x_wconf 93'>verwahrten</span>
+      <span class='ocrx_word' id='word_1_381' title='bbox 848 852 884 861; x_wconf 92'>Mobil-</span>
+     </span>
+     <span class='ocr_line' id='line_1_39' title="bbox 89 867 876 879; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_382' title='bbox 89 867 146 878; x_wconf 89'>telefonen,</span>
+      <span class='ocrx_word' id='word_1_383' title='bbox 151 867 170 876; x_wconf 91'>der</span>
+      <span class='ocrx_word' id='word_1_384' title='bbox 173 857 227 885; x_wconf 91'>Anspruch</span>
+      <span class='ocrx_word' id='word_1_385' title='bbox 233 857 251 885; x_wconf 92'>auf</span>
+      <span class='ocrx_word' id='word_1_386' title='bbox 255 870 272 876; x_wconf 92'>ein</span>
+      <span class='ocrx_word' id='word_1_387' title='bbox 277 867 344 876; x_wconf 89'>kostenloses</span>
+      <span class='ocrx_word' id='word_1_388' title='bbox 350 867 434 879; x_wconf 92'>Ersatzfahrzeug</span>
+      <span class='ocrx_word' id='word_1_389' title='bbox 440 867 455 876; x_wconf 93'>bis</span>
+      <span class='ocrx_word' id='word_1_390' title='bbox 460 870 471 876; x_wconf 93'>zu</span>
+      <span class='ocrx_word' id='word_1_391' title='bbox 477 867 489 876; x_wconf 68'>14</span>
+      <span class='ocrx_word' id='word_1_392' title='bbox 491 867 525 879; x_wconf 68'>Tagen</span>
+      <span class='ocrx_word' id='word_1_393' title='bbox 531 867 556 876; x_wconf 92'>nach</span>
+      <span class='ocrx_word' id='word_1_394' title='bbox 562 867 667 879; x_wconf 91'>Fahrzeugdiebstahl</span>
+      <span class='ocrx_word' id='word_1_395' title='bbox 672 870 705 876; x_wconf 92'>sowie</span>
+      <span class='ocrx_word' id='word_1_396' title='bbox 710 867 734 876; x_wconf 89'>eine</span>
+      <span class='ocrx_word' id='word_1_397' title='bbox 739 867 855 879; x_wconf 89'>Reifen-Versicherung.</span>
+      <span class='ocrx_word' id='word_1_398' title='bbox 864 867 876 876; x_wconf 91'>Im</span>
+     </span>
+     <span class='ocr_line' id='line_1_40' title="bbox 90 883 875 894; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_399' title='bbox 90 883 144 892; x_wconf 87'>Einzelnen</span>
+      <span class='ocrx_word' id='word_1_400' title='bbox 149 883 172 892; x_wconf 93'>sind</span>
+      <span class='ocrx_word' id='word_1_401' title='bbox 171 874 194 902; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_402' title='bbox 198 883 340 894; x_wconf 92'>Versicherungsleistungen</span>
+      <span class='ocrx_word' id='word_1_403' title='bbox 346 885 355 892; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_404' title='bbox 360 883 381 892; x_wconf 93'>den</span>
+      <span class='ocrx_word' id='word_1_405' title='bbox 386 883 501 894; x_wconf 92'>Zusatzbedingungen</span>
+      <span class='ocrx_word' id='word_1_406' title='bbox 499 874 522 902; x_wconf 75'>für</span>
+      <span class='ocrx_word' id='word_1_407' title='bbox 521 874 544 902; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_408' title='bbox 549 883 647 894; x_wconf 91'>Kfz-Versicherung</span>
+      <span class='ocrx_word' id='word_1_409' title='bbox 653 883 685 892; x_wconf 92'>DEVK</span>
+      <span class='ocrx_word' id='word_1_410' title='bbox 690 883 742 892; x_wconf 92'>Premium</span>
+      <span class='ocrx_word' id='word_1_411' title='bbox 748 883 768 892; x_wconf 93'>und</span>
+      <span class='ocrx_word' id='word_1_412' title='bbox 774 883 794 892; x_wconf 93'>den</span>
+      <span class='ocrx_word' id='word_1_413' title='bbox 800 883 875 892; x_wconf 91'>Zusatzbedin-</span>
+     </span>
+     <span class='ocr_line' id='line_1_41' title="bbox 89 898 833 910; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_414' title='bbox 89 901 133 910; x_wconf 73'>gungen</span>
+      <span class='ocrx_word' id='word_1_415' title='bbox 138 898 154 907; x_wconf 90'>für</span>
+      <span class='ocrx_word' id='word_1_416' title='bbox 159 898 175 908; x_wconf 90'>die</span>
+      <span class='ocrx_word' id='word_1_417' title='bbox 181 898 297 910; x_wconf 48'>Reifon-Versicherung</span>
+      <span class='ocrx_word' id='word_1_418' title='bbox 303 898 351 910; x_wconf 84'>geragelt.</span>
+      <span class='ocrx_word' id='word_1_419' title='bbox 359 898 429 910; x_wconf 84'>Risikoträger</span>
+      <span class='ocrx_word' id='word_1_420' title='bbox 434 898 452 908; x_wconf 89'>der</span>
+      <span class='ocrx_word' id='word_1_421' title='bbox 457 898 574 910; x_wconf 32'>Reifen-Versicherung</span>
+      <span class='ocrx_word' id='word_1_422' title='bbox 580 900 592 908; x_wconf 92'>ist</span>
+      <span class='ocrx_word' id='word_1_423' title='bbox 597 898 614 908; x_wconf 89'>die</span>
+      <span class='ocrx_word' id='word_1_424' title='bbox 619 898 665 908; x_wconf 89'>German</span>
+      <span class='ocrx_word' id='word_1_425' title='bbox 664 889 731 917; x_wconf 92'>Assistance</span>
+      <span class='ocrx_word' id='word_1_426' title='bbox 735 889 810 917; x_wconf 92'>Versicherung</span>
+      <span class='ocrx_word' id='word_1_427' title='bbox 816 898 833 907; x_wconf 90'>AG.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_19' title="bbox 465 898 485 908">
+    <p class='ocr_par' id='par_1_20' lang='deu' title="bbox 465 898 485 908">
+     <span class='ocr_line' id='line_1_42' title="bbox 465 898 485 908; baseline 0 409; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_428' title='bbox 465 898 485 908; x_wconf 95'> </span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_20' title="bbox 89 922 863 965">
+    <p class='ocr_par' id='par_1_21' lang='deu' title="bbox 89 922 863 965">
+     <span class='ocr_line' id='line_1_43' title="bbox 90 922 855 934; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_429' title='bbox 90 922 106 931; x_wconf 92'>Bei</span>
+      <span class='ocrx_word' id='word_1_430' title='bbox 112 922 189 931; x_wconf 90'>vereinbartem</span>
+      <span class='ocrx_word' id='word_1_431' title='bbox 194 922 269 931; x_wconf 92'>Aktiv-Schutz</span>
+      <span class='ocrx_word' id='word_1_432' title='bbox 274 922 309 934; x_wconf 88'>gelten</span>
+      <span class='ocrx_word' id='word_1_433' title='bbox 314 922 365 931; x_wconf 88'>teilweise</span>
+      <span class='ocrx_word' id='word_1_434' title='bbox 370 924 426 933; x_wconf 87'>geringere</span>
+      <span class='ocrx_word' id='word_1_435' title='bbox 432 922 495 933; x_wconf 87'>Leistungen</span>
+      <span class='ocrx_word' id='word_1_436' title='bbox 500 922 515 931; x_wconf 91'>als</span>
+      <span class='ocrx_word' id='word_1_437' title='bbox 521 922 547 931; x_wconf 92'>nach</span>
+      <span class='ocrx_word' id='word_1_438' title='bbox 552 922 577 931; x_wconf 92'>dem</span>
+      <span class='ocrx_word' id='word_1_439' title='bbox 583 922 672 931; x_wconf 81'>Komfort-Schutz.</span>
+      <span class='ocrx_word' id='word_1_440' title='bbox 681 922 705 931; x_wconf 91'>Dies</span>
+      <span class='ocrx_word' id='word_1_441' title='bbox 711 922 748 931; x_wconf 84'>betrifft</span>
+      <span class='ocrx_word' id='word_1_442' title='bbox 753 925 757 931; x_wconf 80'>z,</span>
+      <span class='ocrx_word' id='word_1_443' title='bbox 766 922 772 931; x_wconf 51'>B,</span>
+      <span class='ocrx_word' id='word_1_444' title='bbox 779 912 798 940; x_wconf 90'>die</span>
+      <span class='ocrx_word' id='word_1_445' title='bbox 802 922 855 931; x_wconf 91'>Versiche-</span>
+     </span>
+     <span class='ocr_line' id='line_1_44' title="bbox 90 937 863 949; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_446' title='bbox 90 940 174 949; x_wconf 90'>rungssummen</span>
+      <span class='ocrx_word' id='word_1_447' title='bbox 179 937 195 947; x_wconf 92'>für</span>
+      <span class='ocrx_word' id='word_1_448' title='bbox 200 937 302 947; x_wconf 91'>Personenschäden</span>
+      <span class='ocrx_word' id='word_1_449' title='bbox 308 940 317 947; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_450' title='bbox 322 938 341 947; x_wconf 87'>der</span>
+      <span class='ocrx_word' id='word_1_451' title='bbox 346 937 503 949; x_wconf 87'>Kfz-Haftpflichtversicherung</span>
+      <span class='ocrx_word' id='word_1_452' title='bbox 509 940 542 947; x_wconf 90'>sowie</span>
+      <span class='ocrx_word' id='word_1_453' title='bbox 547 938 564 947; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_454' title='bbox 570 940 578 947; x_wconf 89'>in</span>
+      <span class='ocrx_word' id='word_1_455' title='bbox 584 938 602 947; x_wconf 89'>der</span>
+      <span class='ocrx_word' id='word_1_456' title='bbox 608 938 717 949; x_wconf 90'>Kaskoversicherung</span>
+      <span class='ocrx_word' id='word_1_457' title='bbox 723 937 741 947; x_wconf 90'>auf</span>
+      <span class='ocrx_word' id='word_1_458' title='bbox 746 938 766 947; x_wconf 90'>den</span>
+      <span class='ocrx_word' id='word_1_459' title='bbox 771 937 863 947; x_wconf 91'>Zusammenstoß</span>
+     </span>
+     <span class='ocr_line' id='line_1_45' title="bbox 89 953 353 965; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_460' title='bbox 89 954 108 962; x_wconf 75'>‚mit</span>
+      <span class='ocrx_word' id='word_1_461' title='bbox 113 953 163 962; x_wconf 91'>Haarwild</span>
+      <span class='ocrx_word' id='word_1_462' title='bbox 170 953 226 965; x_wconf 90'>begrenzte</span>
+      <span class='ocrx_word' id='word_1_463' title='bbox 230 953 353 965; x_wconf 67'>Wildschadendeckung.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_21' title="bbox 89 987 879 1051">
+    <p class='ocr_par' id='par_1_22' lang='deu' title="bbox 89 987 879 1051">
+     <span class='ocr_line' id='line_1_46' title="bbox 89 987 875 999; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_464' title='bbox 89 988 148 997; x_wconf 89'>Versichert</span>
+      <span class='ocrx_word' id='word_1_465' title='bbox 152 988 176 997; x_wconf 92'>sind</span>
+      <span class='ocrx_word' id='word_1_466' title='bbox 181 979 222 1007; x_wconf 92'>jeweils</span>
+      <span class='ocrx_word' id='word_1_467' title='bbox 221 979 243 1007; x_wconf 92'>die</span>
+      <span class='ocrx_word' id='word_1_468' title='bbox 248 988 293 998; x_wconf 85'>Risiken,</span>
+      <span class='ocrx_word' id='word_1_469' title='bbox 298 988 315 997; x_wconf 85'>die</span>
+      <span class='ocrx_word' id='word_1_470' title='bbox 320 979 350 1007; x_wconf 86'>unter</span>
+      <span class='ocrx_word' id='word_1_471' title='bbox 355 979 372 1007; x_wconf 86'>die</span>
+      <span class='ocrx_word' id='word_1_472' title='bbox 377 988 440 997; x_wconf 90'>tatsächlich</span>
+      <span class='ocrx_word' id='word_1_473' title='bbox 445 988 545 999; x_wconf 91'>abgeschlossenen</span>
+      <span class='ocrx_word' id='word_1_474' title='bbox 551 988 603 997; x_wconf 88'>Produkte</span>
+      <span class='ocrx_word' id='word_1_475' title='bbox 608 987 639 997; x_wconf 81'>fallen.</span>
+      <span class='ocrx_word' id='word_1_476' title='bbox 648 987 662 997; x_wconf 83'>So</span>
+      <span class='ocrx_word' id='word_1_477' title='bbox 667 987 680 997; x_wconf 92'>ist</span>
+      <span class='ocrx_word' id='word_1_478' title='bbox 685 990 689 997; x_wconf 84'>z.</span>
+      <span class='ocrx_word' id='word_1_479' title='bbox 698 988 708 997; x_wconf 90'>B.</span>
+      <span class='ocrx_word' id='word_1_480' title='bbox 713 990 730 997; x_wconf 92'>ein</span>
+      <span class='ocrx_word' id='word_1_481' title='bbox 735 987 842 997; x_wconf 89'>Glasbruchschaden</span>
+      <span class='ocrx_word' id='word_1_482' title='bbox 848 988 875 997; x_wconf 93'>nicht</span>
+     </span>
+     <span class='ocr_line' id='line_1_47' title="bbox 89 1005 879 1016; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_483' title='bbox 89 1005 148 1015; x_wconf 81'>versichert,</span>
+      <span class='ocrx_word' id='word_1_484' title='bbox 153 1007 184 1014; x_wconf 90'>wenn</span>
+      <span class='ocrx_word' id='word_1_485' title='bbox 190 1005 219 1014; x_wconf 90'>keine</span>
+      <span class='ocrx_word' id='word_1_486' title='bbox 225 1005 333 1016; x_wconf 90'>Kaskoversicherung</span>
+      <span class='ocrx_word' id='word_1_487' title='bbox 339 1005 423 1016; x_wconf 91'>abgeschlossen</span>
+      <span class='ocrx_word' id='word_1_488' title='bbox 428 1005 464 1014; x_wconf 82'>wurde,</span>
+      <span class='ocrx_word' id='word_1_489' title='bbox 473 1005 490 1014; x_wconf 93'>Bei</span>
+      <span class='ocrx_word' id='word_1_490' title='bbox 495 995 565 1023; x_wconf 85'>vereinbarter</span>
+      <span class='ocrx_word' id='word_1_491' title='bbox 564 995 619 1023; x_wconf 85'>Teilkasko</span>
+      <span class='ocrx_word' id='word_1_492' title='bbox 624 1005 647 1014; x_wconf 91'>sind</span>
+      <span class='ocrx_word' id='word_1_493' title='bbox 653 1008 657 1014; x_wconf 89'>z.</span>
+      <span class='ocrx_word' id='word_1_494' title='bbox 666 1005 676 1014; x_wconf 91'>B.</span>
+      <span class='ocrx_word' id='word_1_495' title='bbox 681 1005 730 1014; x_wconf 93'>Schäden</span>
+      <span class='ocrx_word' id='word_1_496' title='bbox 735 1007 748 1014; x_wconf 90'>an</span>
+      <span class='ocrx_word' id='word_1_497' title='bbox 754 1005 786 1014; x_wconf 90'>Ihrem</span>
+      <span class='ocrx_word' id='word_1_498' title='bbox 792 1005 843 1016; x_wconf 92'>Fahrzeug</span>
+      <span class='ocrx_word' id='word_1_499' title='bbox 848 1005 879 1014; x_wconf 92'>durch</span>
+     </span>
+     <span class='ocr_line' id='line_1_48' title="bbox 89 1022 860 1033; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_500' title='bbox 89 1022 123 1031; x_wconf 82'>selbst</span>
+      <span class='ocrx_word' id='word_1_501' title='bbox 127 1022 195 1031; x_wconf 91'>verursachte</span>
+      <span class='ocrx_word' id='word_1_502' title='bbox 201 1022 242 1031; x_wconf 91'>Unfälle</span>
+      <span class='ocrx_word' id='word_1_503' title='bbox 247 1022 274 1031; x_wconf 91'>nicht</span>
+      <span class='ocrx_word' id='word_1_504' title='bbox 279 1022 323 1033; x_wconf 90'>gedeckt.</span>
+      <span class='ocrx_word' id='word_1_505' title='bbox 330 1022 363 1031; x_wconf 90'>Wenn</span>
+      <span class='ocrx_word' id='word_1_506' title='bbox 369 1022 398 1031; x_wconf 93'>keine</span>
+      <span class='ocrx_word' id='word_1_507' title='bbox 404 1022 536 1033; x_wconf 91'>Kfz-Unfallversicherung</span>
+      <span class='ocrx_word' id='word_1_508' title='bbox 542 1022 627 1033; x_wconf 90'>abgeschlossen</span>
+      <span class='ocrx_word' id='word_1_509' title='bbox 632 1022 672 1033; x_wconf 85'>wurde,</span>
+      <span class='ocrx_word' id='word_1_510' title='bbox 677 1022 701 1031; x_wconf 85'>sind</span>
+      <span class='ocrx_word' id='word_1_511' title='bbox 706 1022 723 1031; x_wconf 87'>die</span>
+      <span class='ocrx_word' id='word_1_512' title='bbox 728 1022 835 1033; x_wconf 87'>Fahrzeuginsassen,</span>
+      <span class='ocrx_word' id='word_1_513' title='bbox 840 1025 848 1031; x_wconf 81'>z.</span>
+      <span class='ocrx_word' id='word_1_514' title='bbox 854 1022 860 1031; x_wconf 90'>B.</span>
+     </span>
+     <span class='ocr_line' id='line_1_49' title="bbox 90 1039 466 1051; baseline 0 -3; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_515' title='bbox 90 1039 106 1048; x_wconf 92'>bei</span>
+      <span class='ocrx_word' id='word_1_516' title='bbox 112 1039 168 1048; x_wconf 91'>Invalidität</span>
+      <span class='ocrx_word' id='word_1_517' title='bbox 173 1039 199 1048; x_wconf 86'>oder</span>
+      <span class='ocrx_word' id='word_1_518' title='bbox 201 1039 222 1048; x_wconf 86'>Tod</span>
+      <span class='ocrx_word' id='word_1_519' title='bbox 227 1039 259 1048; x_wconf 90'>durch</span>
+      <span class='ocrx_word' id='word_1_520' title='bbox 265 1039 301 1050; x_wconf 87'>Unfall,</span>
+      <span class='ocrx_word' id='word_1_521' title='bbox 307 1039 334 1048; x_wconf 85'>nicht</span>
+      <span class='ocrx_word' id='word_1_522' title='bbox 339 1039 394 1048; x_wconf 92'>zusätzlich</span>
+      <span class='ocrx_word' id='word_1_523' title='bbox 399 1039 466 1051; x_wconf 91'>abgesichert.</span>
+     </span>
+    </p>
+   </div>
+   <div class='ocr_carea' id='block_1_22' title="bbox 89 1073 882 1119">
+    <p class='ocr_par' id='par_1_23' lang='deu' title="bbox 89 1073 882 1119">
+     <span class='ocr_line' id='line_1_50' title="bbox 89 1073 882 1085; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_524' title='bbox 89 1074 130 1083; x_wconf 70'>Welche</span>
+      <span class='ocrx_word' id='word_1_525' title='bbox 135 1074 197 1085; x_wconf 93'>Leistungen</span>
+      <span class='ocrx_word' id='word_1_526' title='bbox 203 1074 223 1083; x_wconf 76'>Ihre</span>
+      <span class='ocrx_word' id='word_1_527' title='bbox 227 1074 315 1085; x_wconf 92'>Versicherungen</span>
+      <span class='ocrx_word' id='word_1_528' title='bbox 321 1076 333 1083; x_wconf 88'>im</span>
+      <span class='ocrx_word' id='word_1_529' title='bbox 339 1074 393 1083; x_wconf 82'>Einzelnen</span>
+      <span class='ocrx_word' id='word_1_530' title='bbox 398 1073 456 1084; x_wconf 92'>umfassen,</span>
+      <span class='ocrx_word' id='word_1_531' title='bbox 461 1073 497 1083; x_wconf 90'>finden</span>
+      <span class='ocrx_word' id='word_1_532' title='bbox 502 1073 519 1083; x_wconf 90'>Sie</span>
+      <span class='ocrx_word' id='word_1_533' title='bbox 524 1076 533 1083; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_534' title='bbox 538 1074 559 1083; x_wconf 92'>den</span>
+      <span class='ocrx_word' id='word_1_535' title='bbox 563 1074 720 1085; x_wconf 40'>Versicherungsbedingungen,</span>
+      <span class='ocrx_word' id='word_1_536' title='bbox 729 1074 761 1083; x_wconf 91'>Ihrem</span>
+      <span class='ocrx_word' id='word_1_537' title='bbox 765 1074 882 1085; x_wconf 92'>Versicherungsantrag</span>
+     </span>
+     <span class='ocr_line' id='line_1_51' title="bbox 89 1091 882 1102; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_538' title='bbox 89 1091 131 1100; x_wconf 9'>*können</span>
+      <span class='ocrx_word' id='word_1_539' title='bbox 137 1091 154 1100; x_wconf 91'>Sie</span>
+      <span class='ocrx_word' id='word_1_540' title='bbox 159 1092 202 1100; x_wconf 93'>weitere</span>
+      <span class='ocrx_word' id='word_1_541' title='bbox 208 1091 289 1100; x_wconf 91'>Informationen</span>
+      <span class='ocrx_word' id='word_1_542' title='bbox 295 1093 306 1100; x_wconf 92'>zu</span>
+      <span class='ocrx_word' id='word_1_543' title='bbox 312 1091 332 1100; x_wconf 86'>den</span>
+      <span class='ocrx_word' id='word_1_544' title='bbox 338 1082 392 1110; x_wconf 84'>einzelnen</span>
+      <span class='ocrx_word' id='word_1_545' title='bbox 396 1082 512 1110; x_wconf 90'>Versicherungsarten,</span>
+      <span class='ocrx_word' id='word_1_546' title='bbox 517 1091 543 1100; x_wconf 93'>auch</span>
+      <span class='ocrx_word' id='word_1_547' title='bbox 549 1092 567 1100; x_wconf 91'>mit</span>
+      <span class='ocrx_word' id='word_1_548' title='bbox 572 1091 623 1102; x_wconf 91'>Angaben</span>
+      <span class='ocrx_word' id='word_1_549' title='bbox 628 1093 652 1100; x_wconf 92'>zum</span>
+      <span class='ocrx_word' id='word_1_550' title='bbox 652 1082 710 1110; x_wconf 92'>gewählten</span>
+      <span class='ocrx_word' id='word_1_551' title='bbox 715 1091 748 1101; x_wconf 83'>Tarif,</span>
+      <span class='ocrx_word' id='word_1_552' title='bbox 753 1093 765 1100; x_wconf 83'>zu</span>
+      <span class='ocrx_word' id='word_1_553' title='bbox 769 1091 882 1102; x_wconf 87'>Versicherungssum-</span>
+     </span>
+     <span class='ocr_line' id='line_1_52' title="bbox 90 1108 337 1119; baseline 0 -2; x_size 20; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_554' title='bbox 90 1111 114 1117; x_wconf 93'>men</span>
+      <span class='ocrx_word' id='word_1_555' title='bbox 120 1108 141 1117; x_wconf 92'>und</span>
+      <span class='ocrx_word' id='word_1_556' title='bbox 146 1108 266 1119; x_wconf 89'>Selbstbeteiligungen,</span>
+      <span class='ocrx_word' id='word_1_557' title='bbox 271 1108 337 1117; x_wconf 79'>entnehmen.</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
