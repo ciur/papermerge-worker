@@ -77,7 +77,6 @@ def ocr_page_pdf(
 @shared_task(bind=True)
 def ocr_page(
     self,
-    tenant_name,
     user_id,
     document_id,
     file_name,
@@ -92,14 +91,13 @@ def ocr_page(
     # https://celery.readthedocs.io/en/latest/userguide/tasks.html#bound-tasks
     logger.info(
         f"worker_log task_id={self.request.id}"
-        f" tenant_name={tenant_name} user_id={user_id} doc_id={document_id}"
+        f" user_id={user_id} doc_id={document_id}"
         f" page_num={page_num}"
     )
     t1 = time.time()
     lang = lang.lower()
 
     doc_ep = DocumentEp(
-        tenant_name=tenant_name,
         user_id=user_id,
         document_id=document_id,
         file_name=file_name,
@@ -135,14 +133,14 @@ def ocr_page(
         tx2 = time.time()
         logger.info(
             f"worker_log task_id={self.request.id}"
-            f" tenant_name={tenant_name} user_id={user_id}"
+            f" user_id={user_id}"
             f" doc_id={document_id}"
             f" page_num={page_num} page_type=pdf page_ocr_time={tx2-tx1:.2f}"
         )
     else:
         logger.info(
             f"worker_log task_id={self.request.id}"
-            f" tenant_name={tenant_name} user_id={user_id}"
+            f" user_id={user_id}"
             f" doc_id={document_id}"
             f" page_num={page_num} error=Unkown file type"
         )
@@ -152,7 +150,7 @@ def ocr_page(
         upload_page(page_ep)
         logger.info(
             f"worker_log task_id={self.request.id}"
-            f" tenant_name={tenant_name} user_id={user_id}"
+            f" user_id={user_id}"
             f" doc_id={document_id}"
             f" page_num={page_num} uploaded={page_ep.url(Endpoint.S3)}"
         )
@@ -160,7 +158,7 @@ def ocr_page(
     t2 = time.time()
     logger.info(
         f"worker_log success task_id={self.request.id}"
-        f" tenant_name={tenant_name} user_id={user_id} doc_id={document_id}"
+        f" user_id={user_id} doc_id={document_id}"
         f" page_num={page_num} page_type={page_type}"
         f" total_exec_time={t2-t1:.2f}"
     )

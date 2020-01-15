@@ -126,12 +126,10 @@ class DocumentEp:
         user_id,
         document_id,
         file_name,
-        tenant_name=None,
         aux_dir="docs"
     ):
         self.remote_endpoint = remote_endpoint
         self.local_endpoint = local_endpoint
-        self.tenant_name = tenant_name  # optional
         self.user_id = user_id
         self.document_id = document_id
         self.file_name = file_name
@@ -152,10 +150,7 @@ class DocumentEp:
 
     @property
     def dirname(self):
-        if not self.tenant_name:
-            root_dir = f"{self.local_endpoint.dirname}"
-        else:
-            root_dir = f"{self.local_endpoint.dirname}{self.tenant_name}/"
+        root_dir = f"{self.local_endpoint.dirname}"
 
         full_path = (
             f"{root_dir}"
@@ -171,10 +166,7 @@ class DocumentEp:
 
     @property
     def key(self):
-        if not self.tenant_name:
-            root_dir = f"{self.aux_dir}"
-        else:
-            root_dir = f"{self.tenant_name}/{self.aux_dir}"
+        root_dir = f"{self.aux_dir}"
 
         full_path = (
             f"{root_dir}/user_{self.user_id}/"
@@ -207,7 +199,6 @@ class DocumentEp:
         return DocumentEp(
             remote_endpoint=document_url.remote_endpoint,
             local_endpoint=document_url.local_endpoint,
-            tenant_name=document_url.tenant_name,
             user_id=document_url.user_id,
             document_id=document_url.document_id,
             file_name=document_url.file_name,
@@ -259,14 +250,13 @@ class PageEp:
             doc_dirname = self.results_document_ep.dirname
             result = f"{doc_dirname}pages/page_{self.page_num}.txt"
         else:
-            tenant_name = self.results_document_ep.tenant_name
             aux_dir = self.results_document_ep.aux_dir
             user_id = self.results_document_ep.user_id
             document_id = self.results_document_ep.document_id
 
             result = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
-                f"{tenant_name}/{aux_dir}/user_{user_id}/"
+                f"{aux_dir}/user_{user_id}/"
                 f"document_{document_id}/pages/page_{self.page_num}.txt"
             )
 
@@ -291,14 +281,13 @@ class PageEp:
         if ep == Endpoint.LOCAL:
             url = f"{self.ppmroot}-{self.ppmtopdf_formated_number}.hocr"
         else:
-            tenant_name = self.results_document_ep.tenant_name
             aux_dir = self.results_document_ep.aux_dir
             user_id = self.results_document_ep.user_id
             document_id = self.results_document_ep.document_id
 
             url = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
-                f"{tenant_name}/{aux_dir}/user_{user_id}/"
+                f"{aux_dir}/user_{user_id}/"
                 f"document_{document_id}/pages/page_{self.page_num}/"
                 f"{self.step.percent}/"
                 f"page-{self.ppmtopdf_formated_number}.hocr"
@@ -344,13 +333,12 @@ class PageEp:
         if ep == Endpoint.LOCAL:
             url = f"{self.ppmroot}-{self.ppmtopdf_formated_number}.jpg"
         else:
-            tenant_name = self.results_document_ep.tenant_name
             aux_dir = self.results_document_ep.aux_dir
             user_id = self.results_document_ep.user_id
             document_id = self.results_document_ep.document_id
             url = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
-                f"{tenant_name}/{aux_dir}/user_{user_id}/"
+                f"{aux_dir}/user_{user_id}/"
                 f"document_{document_id}/pages/page_{self.page_num}/"
                 f"{self.step.percent}/"
                 f"page-{self.ppmtopdf_formated_number}.jpg"
