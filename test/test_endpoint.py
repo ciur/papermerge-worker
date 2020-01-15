@@ -80,7 +80,6 @@ class TestDocumentEp(unittest.TestCase):
         doc_ep = DocumentEp(
             remote_endpoint=remote_ep,
             local_endpoint=local_ep,
-            tenant_name="next_gen",
             user_id=1,
             document_id=3,
             file_name="contract.pdf"
@@ -91,7 +90,7 @@ class TestDocumentEp(unittest.TestCase):
         )
         self.assertEqual(
             doc_ep.key,
-            "next_gen/docs/user_1/document_3/contract.pdf"
+            "docs/user_1/document_3/contract.pdf"
         )
 
     def test_document_url(self):
@@ -100,18 +99,17 @@ class TestDocumentEp(unittest.TestCase):
         doc_ep = DocumentEp(
             remote_endpoint=remote_ep,
             local_endpoint=local_ep,
-            tenant_name="next_gen",
             user_id=1,
             document_id=3,
             file_name="x.pdf"
         )
         self.assertEqual(
             doc_ep.url(ep=Endpoint.S3),
-            "s3:/silver-bucket/next_gen/docs/user_1/document_3/x.pdf"
+            "s3:/silver-bucket/docs/user_1/document_3/x.pdf"
         )
         self.assertEqual(
             doc_ep.url(ep=Endpoint.LOCAL),
-            "/var/media/next_gen/docs/user_1/document_3/x.pdf"
+            "/var/media/docs/user_1/document_3/x.pdf"
         )
 
     def test_empty_tenant(self):
@@ -141,7 +139,6 @@ class TestPageEp(unittest.TestCase):
         doc_ep = DocumentEp(
             remote_endpoint=remote_ep,
             local_endpoint=local_ep,
-            tenant_name="next_gen",
             user_id=1,
             document_id=3,
             file_name="x.pdf"
@@ -154,7 +151,7 @@ class TestPageEp(unittest.TestCase):
         )
         self.assertEqual(
             page_url.ppmroot,
-            (f"/var/media/next_gen/results/user_1/"
+            (f"/var/media/results/user_1/"
                 f"document_3/pages/page_1/100/page")
         )
 
@@ -169,7 +166,6 @@ class TestPageEp(unittest.TestCase):
         doc_ep = DocumentEp(
             remote_endpoint=remote_ep,
             local_endpoint=local_ep,
-            tenant_name="next_gen",
             user_id=1,
             document_id=3,
             file_name="x.pdf"

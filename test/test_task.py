@@ -15,7 +15,6 @@ class TestTask(unittest.TestCase):
         settings = get_settings()
 
         ocr_page(
-            tenant_name="test_tenant",
             user_id=1,
             document_id=1,
             file_name="kyuss.pdf",
@@ -27,7 +26,6 @@ class TestTask(unittest.TestCase):
         # Test if ocr_page created jpg, txt and hocr files
         pages = os.path.join(
             Endpoint(settings.local_storage).dirname,
-            "test_tenant",
             "results",
             "user_1",
             "document_1",
