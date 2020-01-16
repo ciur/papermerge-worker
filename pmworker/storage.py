@@ -162,9 +162,7 @@ def download_hocr(page_ep):
 
 
 def download(
-    model_endpoint,
-    s3_download=True,
-    test_local_alternative=None
+    model_endpoint
 ):
     """
     model_endpoint is instance of one of:
@@ -172,10 +170,11 @@ def download(
         * pmworker.endpoint.DocumentUrl
         * pmworker.endpoint.PageUrl.
 
-    Will download either Document original file or Page associated .txt file
-    from remote S3 location to local filesystem.
-    In case of s3_download=False (in testing) local version of the file
-    will be used instead (copied from testing/data dir).
+    Will download Document original file or Page associated .txt file
+    from remote S3 location (shared storage) to local MEDIA_ROOT.
+
+    This function makes sense only in case of settings.S3=True i.e.
+    only if S3 media storage is enabled.
     """
 
     if model_endpoint.exists():
@@ -195,13 +194,13 @@ def download(
     else:
         logger.debug(f"{local_dirname} already exists.")
 
-    if not s3_download:
-        logger.debug("s3_download=False. Use test data dir.")
-        logger.debug(f"Using file {test_local_alternative}")
-        copy2doc_url(
-            src_file_path=test_local_alternative,
-            doc_url=model_endpoint.url()
-        )
+    # if not s3_download:
+    #    logger.debug("s3_download=False. Use test data dir.")
+    #    logger.debug(f"Using file {test_local_alternative}")
+    #    copy2doc_url(
+    #        src_file_path=test_local_alternative,
+    #        doc_url=model_endpoint.url()
+    #    )
 
     s3_client = boto3.client('s3')
 
