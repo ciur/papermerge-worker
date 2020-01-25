@@ -2,6 +2,7 @@ Papermerge Worker
 ================
 
 pmwroker's main job is OCR processing. It extracts text from pdf, tiff, jpeg and png.
+For full project description please see [Papermerge Project](https://github.com/ciur/papermerge)
 
 Requirements
 =============
