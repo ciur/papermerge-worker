@@ -1,5 +1,5 @@
 include README.md
 include MANIFEST.in
 include requirements.txt
-exclude setup.py
+include setup.py
 exclude setup.cfg

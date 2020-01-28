@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pmworker",
-    version="1.0.0-1",
+    version="1.0.0-2",
     author="Eugen Ciur",
     author_email="eugen@papermerge.com",
     url="https://github.com/ciur/papermerge-worker",
