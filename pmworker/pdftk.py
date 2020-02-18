@@ -1,3 +1,4 @@
+import os
 import logging
 
 from pmworker.runcmd import run
@@ -56,6 +57,14 @@ def cat_ranges_for_delete(page_count, page_numbers):
     return results
 
 
+def make_sure_path_exists(filepath):
+    dirname = os.path.dirname(filepath)
+    os.makedirs(
+        dirname,
+        exist_ok=True
+    )
+
+
 def delete_pages(doc_ep, page_numbers):
     ep_url = doc_ep.url()
     page_count = get_pagecount(ep_url)
@@ -65,21 +74,20 @@ def delete_pages(doc_ep, page_numbers):
         page_numbers
     )
 
-    # convert ranges from list of ints to list of strings
-    cat_ranges_str = ' '.join(
-        [str(number) for number in cat_ranges]
-    )
-
     doc_ep.inc_version()
 
-    cmd = (
+    cmd = [
         "pdftk",
         ep_url,
-        "cat",
-        cat_ranges_str,
-        "output",
-        # because inc_version() was called
-        # next version of url will be returned
-        doc_ep.url()
-    )
+        "cat"
+    ]
+    for page in cat_ranges:
+        cmd.append(
+            str(page)
+        )
+
+    cmd.append("output")
+    make_sure_path_exists(doc_ep.url())
+    cmd.append(doc_ep.url())
+
     run(cmd)
