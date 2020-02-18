@@ -61,13 +61,18 @@ def delete_pages(doc_ep, page_numbers):
         page_numbers
     )
 
+    # convert ranges from list of ints to list of strings
+    cat_ranges_str = ' '.join([
+        [str(number) for number in cat_ranges]
+    ])
+
     doc_ep.inc_version()
 
     cmd = (
         "pdftk",
         ep_url,
         "cat",
-        cat_ranges,
+        cat_ranges_str,
         "output",
         # because inc_version() was called
         # next version of url will be returned
