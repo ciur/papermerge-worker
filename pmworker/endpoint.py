@@ -116,7 +116,11 @@ class Endpoint:
 class DocumentEp:
     """
     Document Endpoint:
-    <schema>://<media_root>/<tenant_name>/<aux_dir>/<user_id>/<doc_id>/<file_name>
+    <schema>://<media_root>/<aux_dir>/<user_id>/<doc_id>/<version>/<file_name>
+
+    If version = 0, it is not included in Endpoint.
+    Document's version is incremented everytime pdftk operation runs on it
+    (when pages are deleted, reordered, pasted)
     """
 
     def __init__(
@@ -134,6 +138,8 @@ class DocumentEp:
         self.document_id = document_id
         self.file_name = file_name
         self.aux_dir = aux_dir
+        # by default, document has version 0
+        self.version = 0
 
     def url(self, ep=Endpoint.LOCAL):
         full_path = None
@@ -176,7 +182,7 @@ class DocumentEp:
 
     def __repr__(self):
         message = (
-            f"DocumentEp(tenant_name={self.tenant_name},"
+            f"DocumentEp(version={self.version},"
             f"remote_endpoint={self.remote_endpoint},"
             f"local_endpoint={self.local_endpoint},"
             f"user_id={self.user_id},"
@@ -184,6 +190,9 @@ class DocumentEp:
             f"file_name={self.file_name})"
         )
         return message
+
+    def inc_version(self):
+        self.version = self.version + 1
 
     def exists(self, ep=Endpoint.LOCAL):
         result = False
