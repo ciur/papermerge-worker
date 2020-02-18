@@ -44,6 +44,11 @@ def cat_ranges_for_delete(page_count, page_numbers):
     """
     results = []
 
+    for check in page_numbers:
+        if not isinstance(check, int):
+            err_msg = "page_numbers must be a list of strings"
+            raise ValueError(err_msg)
+
     for number in range(1, page_count + 1):
         if number not in page_numbers:
             results.append(number)
@@ -61,9 +66,9 @@ def delete_pages(doc_ep, page_numbers):
     )
 
     # convert ranges from list of ints to list of strings
-    cat_ranges_str = ' '.join([
+    cat_ranges_str = ' '.join(
         [str(number) for number in cat_ranges]
-    ])
+    )
 
     doc_ep.inc_version()
 

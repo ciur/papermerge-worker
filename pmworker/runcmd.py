@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 def run(cmd):
     logger.debug(
-        f"Run:{' '.join(cmd)}"
+        f"Run:{'|'.join(cmd)}"
     )
 
     ret = subprocess.run(
