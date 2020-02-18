@@ -164,6 +164,9 @@ class DocumentEp:
             f"document_{self.document_id}/"
         )
 
+        if self.version > 0:
+            full_path = f"{full_path}v{self.version}/"
+
         return full_path
 
     @property
@@ -176,8 +179,14 @@ class DocumentEp:
 
         full_path = (
             f"{root_dir}/user_{self.user_id}/"
-            f"document_{self.document_id}/{self.file_name}"
+            f"document_{self.document_id}/"
         )
+
+        if self.version > 0:
+            full_path = f"{full_path}v{self.version}/{self.file_name}"
+        else:
+            full_path = f"{full_path}{self.file_name}"
+
         return full_path
 
     def __repr__(self):

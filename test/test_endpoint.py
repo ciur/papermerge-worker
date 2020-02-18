@@ -131,6 +131,47 @@ class TestDocumentEp(unittest.TestCase):
             "/var/media/docs/user_1/document_3/x.pdf"
         )
 
+    def test_inc_version(self):
+        """
+        Document endpoints are now versioned.
+        Initial version is 0.
+        When version is 0, the "old" endpoint path applies i.e.
+        version is not included in the path.
+        After document is modified (blank page deleted for example),
+        its version is incremented. If document version is > 0, then
+        version is included in the path.
+        """
+        remote_ep = Endpoint("s3:/silver-bucket/")
+        local_ep = Endpoint("local:/var/media/")
+        doc_ep = DocumentEp(
+            remote_endpoint=remote_ep,
+            local_endpoint=local_ep,
+            user_id=1,
+            document_id=3,
+            file_name="x.pdf"
+        )
+        doc_ep.inc_version()
+
+        self.assertEqual(
+            doc_ep.url(),
+            "/var/media/docs/user_1/document_3/v1/x.pdf"
+        )
+        self.assertEqual(
+            doc_ep.url(ep=Endpoint.S3),
+            "s3:/silver-bucket/docs/user_1/document_3/v1/x.pdf"
+        )
+
+        doc_ep.inc_version()
+
+        self.assertEqual(
+            doc_ep.url(),
+            "/var/media/docs/user_1/document_3/v2/x.pdf"
+        )
+        self.assertEqual(
+            doc_ep.url(ep=Endpoint.S3),
+            "s3:/silver-bucket/docs/user_1/document_3/v2/x.pdf"
+        )
+
 
 class TestPageEp(unittest.TestCase):
     def test_ppmroot(self):
