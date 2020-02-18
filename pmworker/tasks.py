@@ -170,3 +170,18 @@ def ocr_page(
 
     return True
 
+
+@shared_task(bind=True)
+def delete_pages(
+    self,
+    user_id,
+    document_id,
+    file_name,
+    page_numbers,
+    s3_upload=True,
+    s3_download=True,
+    test_local_alternative=None
+):
+    # async task to apply
+    # pdftk.delete_pages operation
+    pass
