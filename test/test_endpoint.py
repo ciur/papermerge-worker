@@ -174,6 +174,29 @@ class TestDocumentEp(unittest.TestCase):
 
 
 class TestPageEp(unittest.TestCase):
+    def test_verioned_page_ep(self):
+        remote_ep = Endpoint("s3:/silver-bucket/")
+        local_ep = Endpoint("local:/var/media/")
+        doc_ep = DocumentEp(
+            remote_endpoint=remote_ep,
+            local_endpoint=local_ep,
+            user_id=1,
+            document_id=3,
+            file_name="x.pdf"
+        )
+        # document's version incremented
+        doc_ep.inc_version()
+
+        page_ep = PageEp(
+            document_ep=doc_ep,
+            page_num=1,
+            page_count=3
+        )
+        self.assertEqual(
+            page_ep.url(),
+            "/var/media/results/user_1/document_3/v1/pages/page_1.txt"
+        )
+
     def test_ppmroot(self):
         remote_ep = Endpoint("s3:/silver-bucket/")
         local_ep = Endpoint("local:/var/media/")
