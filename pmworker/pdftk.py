@@ -91,3 +91,5 @@ def delete_pages(doc_ep, page_numbers):
     cmd.append(doc_ep.url())
 
     run(cmd)
+
+    return doc_ep.version

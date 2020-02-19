@@ -130,7 +130,8 @@ class DocumentEp:
         user_id,
         document_id,
         file_name,
-        aux_dir="docs"
+        aux_dir="docs",
+        version=0
     ):
         self.remote_endpoint = remote_endpoint
         self.local_endpoint = local_endpoint
@@ -139,7 +140,7 @@ class DocumentEp:
         self.file_name = file_name
         self.aux_dir = aux_dir
         # by default, document has version 0
-        self.version = 0
+        self.version = version
 
     def url(self, ep=Endpoint.LOCAL):
         full_path = None
@@ -213,13 +214,14 @@ class DocumentEp:
 
         return result
 
-    def copy_from(document_url, aux_dir):
+    def copy_from(doc_ep, aux_dir):
         return DocumentEp(
-            remote_endpoint=document_url.remote_endpoint,
-            local_endpoint=document_url.local_endpoint,
-            user_id=document_url.user_id,
-            document_id=document_url.document_id,
-            file_name=document_url.file_name,
+            remote_endpoint=doc_ep.remote_endpoint,
+            local_endpoint=doc_ep.local_endpoint,
+            user_id=doc_ep.user_id,
+            document_id=doc_ep.document_id,
+            file_name=doc_ep.file_name,
+            version=doc_ep.version,
             aux_dir=aux_dir
         )
 
