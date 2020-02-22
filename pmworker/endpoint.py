@@ -251,13 +251,14 @@ class PageEp:
         self.page_count = page_count
         self.page_num = page_num
         self.step = step
+        self.pages = self.document_ep.pages
 
     @property
     def ppmroot(self):
         # returns schema://.../<doc_id>/pages/<page_num>/<step>/page
-        doc_dirname = self.results_document_ep.dirname
+        pages_dirname = self.results_document_ep.pages_dirname
         result = (
-            f"{doc_dirname}pages/page_{self.page_num}/"
+            f"{pages_dirname}page_{self.page_num}/"
             f"{self.step.percent}/page"
         )
         return result
@@ -272,8 +273,8 @@ class PageEp:
         result = None
 
         if ep == Endpoint.LOCAL:
-            doc_dirname = self.results_document_ep.dirname
-            result = f"{doc_dirname}pages/page_{self.page_num}.txt"
+            pages_dirname = self.results_document_ep.pages_dirname
+            result = f"{pages_dirname}page_{self.page_num}.txt"
         else:
             aux_dir = self.results_document_ep.aux_dir
             user_id = self.results_document_ep.user_id
@@ -282,7 +283,7 @@ class PageEp:
             result = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
                 f"{aux_dir}/user_{user_id}/"
-                f"document_{document_id}/pages/page_{self.page_num}.txt"
+                f"document_{document_id}/{self.pages}/page_{self.page_num}.txt"
             )
 
         return result
@@ -313,7 +314,7 @@ class PageEp:
             url = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
                 f"{aux_dir}/user_{user_id}/"
-                f"document_{document_id}/pages/page_{self.page_num}/"
+                f"document_{document_id}/{self.pages}/page_{self.page_num}/"
                 f"{self.step.percent}/"
                 f"page-{self.ppmtopdf_formated_number}.hocr"
             )
@@ -364,7 +365,7 @@ class PageEp:
             url = (
                 f"s3:/{self.results_document_ep.remote_endpoint.bucketname}/"
                 f"{aux_dir}/user_{user_id}/"
-                f"document_{document_id}/pages/page_{self.page_num}/"
+                f"document_{document_id}/{self.pages}/page_{self.page_num}/"
                 f"{self.step.percent}/"
                 f"page-{self.ppmtopdf_formated_number}.jpg"
             )

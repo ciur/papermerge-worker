@@ -198,12 +198,14 @@ class TestDocumentEp(unittest.TestCase):
 
 
 class TestPageEp(unittest.TestCase):
-    def test_verioned_page_ep(self):
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
+    def setUp(self):
+        self.remote_ep = Endpoint("s3:/silver-bucket/")
+        self.local_ep = Endpoint("local:/var/media/")
+
+    def test_versioned_page_ep(self):
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="x.pdf"
@@ -221,12 +223,33 @@ class TestPageEp(unittest.TestCase):
             "/var/media/results/user_1/document_3/v1/pages/page_1.txt"
         )
 
-    def test_ppmroot(self):
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
+    def test_txt_url(self):
+        """
+        Without any arguments
+            page_ep.url() returns page_ep.txt_url()
+        """
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
+            user_id=1,
+            document_id=3,
+            file_name="x.pdf"
+        )
+        page_ep = PageEp(
+            document_ep=doc_ep,
+            page_num=1,
+            step=Step(1),
+            page_count=3
+        )
+        self.assertEqual(
+            page_ep.url(),
+            page_ep.txt_url()
+        )
+
+    def test_ppmroot(self):
+        doc_ep = DocumentEp(
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="x.pdf"
