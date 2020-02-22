@@ -141,6 +141,7 @@ class DocumentEp:
         self.aux_dir = aux_dir
         # by default, document has version 0
         self.version = version
+        self.pages = "pages"
 
     def url(self, ep=Endpoint.LOCAL):
         full_path = None
@@ -169,6 +170,10 @@ class DocumentEp:
             full_path = f"{full_path}v{self.version}/"
 
         return full_path
+
+    @property
+    def pages_dirname(self):
+        return f"{self.dirname}{self.pages}/"
 
     @property
     def bucketname(self):
