@@ -10,6 +10,13 @@ OcrMigrate class takes care of this sort of txt/hocr files moves.
 """
 
 
+def get_pagecount(ep):
+    """
+    Returns total number of pages for this endpoint
+    """
+    pass
+
+
 class OcrMigrate:
     """
     Insead of running again OCR operation on changed document AGAIN
@@ -32,12 +39,6 @@ class OcrMigrate:
     def __init__(self, src_ep, dst_ep):
         self.src_ep = src_ep
         self.dst_ep = dst_ep
-
-    def get_pagecount(self, ep):
-        """
-        Returns total number of pages for this endpoint
-        """
-        pass
 
     def get_assigns_after_delete(self, total_pages, deleted_pages):
         """
