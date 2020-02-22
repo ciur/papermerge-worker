@@ -1,4 +1,5 @@
-
+from os import listdir
+from os.path import isfile, join
 
 """
 OCR operations are per page. Cut/Paste/Delete/Reorder are per page as well.
@@ -10,11 +11,17 @@ OcrMigrate class takes care of this sort of txt/hocr files moves.
 """
 
 
-def get_pagecount(ep):
+def get_pagecount(doc_ep):
     """
-    Returns total number of pages for this endpoint
+    Returns total number of pages for this endpoint.
+    Total number of pages = number of page_xy.txt files
+    in pages_dirname folder.
     """
-    pass
+    pages_dir = doc_ep.pages_dirname
+    onlyfiles = [
+        f for f in listdir(pages_dir) if isfile(join(pages_dir, f))
+    ]
+    return len(onlyfiles)
 
 
 class OcrMigrate:

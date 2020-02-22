@@ -3,14 +3,11 @@ import os
 
 from pmworker.ocrmigrate import (
     get_pagecount,
-    OcrMigrate
 )
 
 from pmworker.endpoint import (
-    Endpoint, DocumentEp, PageEp,
-    get_bucketname, get_keyname
+    Endpoint, DocumentEp
 )
-from pmworker.step import Step
 
 
 class TestOthers(unittest.TestCase):
@@ -30,6 +27,7 @@ class TestOthers(unittest.TestCase):
             local_endpoint=local_ep,
             user_id=1,
             document_id=3,
+            aux_dir="results",
             file_name="x.pdf"
         )
         self.assertEqual(
