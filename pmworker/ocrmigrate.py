@@ -1,5 +1,6 @@
 from os import listdir
 from os.path import isfile, join
+from pmworker.endpoint import (DocumentEp, PageEp)
 
 """
 OCR operations are per page. Cut/Paste/Delete/Reorder are per page as well.
@@ -24,6 +25,16 @@ def get_pagecount(doc_ep):
     return len(onlyfiles)
 
 
+def copy_page(src_page_ep, dst_page_ep):
+    err_msg = "copy_page accepts only PageEp instances"
+
+    for inst in [src_page_ep, dst_page_ep]:
+        if not isinstance(inst, PageEp):
+            raise ValueError(err_msg)
+
+    # copy content of page_x dir...
+
+
 class OcrMigrate:
     """
     Insead of running again OCR operation on changed document AGAIN
@@ -44,6 +55,14 @@ class OcrMigrate:
     """
 
     def __init__(self, src_ep, dst_ep):
+        # Both endpoints shoud be instance of DocumentEp
+
+        for inst in [src_ep, dst_ep]:
+            if not isinstance(inst, DocumentEp):
+                raise ValueError(
+                    "OcrMigrate args must be DocumentEp instances"
+                )
+
         self.src_ep = src_ep
         self.dst_ep = dst_ep
 
@@ -83,4 +102,28 @@ class OcrMigrate:
         pass
 
     def migrate_delete(self, deleted_pages):
-        pass
+        page_count = get_pagecount(self.src_ep)
+
+        if len(deleted_pages > page_count):
+            raise ValueError(
+                f"deleted_pages({deleted_pages}) > page_count({page_count})"
+            )
+        assigns = self.get_assigns_after_delete(
+            total_pages=page_count,
+            deleted_pages=deleted_pages
+        )
+        for a in assigns:
+            src_page_ep = PageEp(
+                document_ep=self.src_ep,
+                page_num=a[0],
+                page_count=page_count
+            )
+            dst_page_ep = PageEp(
+                document_ep=self.dst_ep,
+                page_num=a[1],
+                page_count=page_count - deleted_pages
+            )
+            copy_page(
+                src_page_ep=src_page_ep,
+                dst_page_ep=dst_page_ep
+            )
