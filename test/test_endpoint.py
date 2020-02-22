@@ -74,12 +74,14 @@ class TestEndpoint(unittest.TestCase):
 
 class TestDocumentEp(unittest.TestCase):
 
+    def setUp(self):
+        self.remote_ep = Endpoint("s3:/silver-bucket/")
+        self.local_ep = Endpoint("local:/var/media/")
+
     def test_document_url_key(self):
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="contract.pdf"
@@ -94,11 +96,9 @@ class TestDocumentEp(unittest.TestCase):
         )
 
     def test_document_url(self):
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="x.pdf"
@@ -117,11 +117,9 @@ class TestDocumentEp(unittest.TestCase):
         With no tenant specified - url to document will
         be without tenant.
         """
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="x.pdf"
@@ -141,11 +139,9 @@ class TestDocumentEp(unittest.TestCase):
         its version is incremented. If document version is > 0, then
         version is included in the path.
         """
-        remote_ep = Endpoint("s3:/silver-bucket/")
-        local_ep = Endpoint("local:/var/media/")
         doc_ep = DocumentEp(
-            remote_endpoint=remote_ep,
-            local_endpoint=local_ep,
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
             user_id=1,
             document_id=3,
             file_name="x.pdf"
@@ -170,6 +166,34 @@ class TestDocumentEp(unittest.TestCase):
         self.assertEqual(
             doc_ep.url(ep=Endpoint.S3),
             "s3:/silver-bucket/docs/user_1/document_3/v2/x.pdf"
+        )
+
+    def test_dirname(self):
+        ep = DocumentEp(
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
+            user_id=1,
+            document_id=3,
+            aux_dir="results",
+            file_name="x.pdf"
+        )
+        self.assertEqual(
+            ep.dirname,
+            "/var/media/results/user_1/document_3/"
+        )
+
+    def test_pages_dirname(self):
+        ep = DocumentEp(
+            remote_endpoint=self.remote_ep,
+            local_endpoint=self.local_ep,
+            user_id=1,
+            document_id=3,
+            aux_dir="results",
+            file_name="x.pdf"
+        )
+        self.assertEqual(
+            ep.pages_dirname,
+            "/var/media/results/user_1/document_3/pages/"
         )
 
 
