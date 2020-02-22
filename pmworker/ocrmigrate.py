@@ -25,6 +25,42 @@ def get_pagecount(doc_ep):
     return len(onlyfiles)
 
 
+def get_assigns_after_delete(total_pages, deleted_pages):
+    """
+    given total pages and a list of deleted pages - returns
+    a list of assignations of pages:
+        [new_version_page_num, old_version_page_num]
+    Example 1:
+    total_pages: 6
+    deleted_pages: [1, 2]
+    returns: [
+        [[1, 3],  [2, 4], [3, 5], [4, 6]]
+        # page #1 gets info from prev page #3
+        # page #2 ... #4
+        ...
+        # page #4 ... #6
+    ]
+
+    Example 2:
+    total pages: 5
+    deleted_pages [1, 5]
+    returns: [
+        [[1, 2], [2, 3], [3, 4]
+    ]
+
+    Example 3:
+    total pages: 5
+    deleted_pages [2, 3]
+    returns: [
+        [[1, 1], [2, 4], [3, 5]
+        # page #1 stays unaffected
+        # page #2 gets the info from page number 4
+        # page #3 gets info from page #5
+    ]
+    """
+    pass
+
+
 def copy_page(src_page_ep, dst_page_ep):
     err_msg = "copy_page accepts only PageEp instances"
 
@@ -66,41 +102,6 @@ class OcrMigrate:
         self.src_ep = src_ep
         self.dst_ep = dst_ep
 
-    def get_assigns_after_delete(self, total_pages, deleted_pages):
-        """
-        given total pages and a list of deleted pages - returns
-        a list of assignations of pages:
-            [new_version_page_num, old_version_page_num]
-        Example 1:
-        total_pages: 6
-        deleted_pages: [1, 2]
-        returns: [
-            [[1, 3],  [2, 4], [3, 5], [4, 6]]
-            # page #1 gets info from prev page #3
-            # page #2 ... #4
-            ...
-            # page #4 ... #6
-        ]
-
-        Example 2:
-        total pages: 5
-        deleted_pages [1, 5]
-        returns: [
-            [[1, 2], [2, 3], [3, 4]
-        ]
-
-        Example 3:
-        total pages: 5
-        deleted_pages [2, 3]
-        returns: [
-            [[1, 1], [2, 4], [3, 5]
-            # page #1 stays unaffected
-            # page #2 gets the info from page number 4
-            # page #3 gets info from page #5
-        ]
-        """
-        pass
-
     def migrate_delete(self, deleted_pages):
         page_count = get_pagecount(self.src_ep)
 
@@ -108,7 +109,7 @@ class OcrMigrate:
             raise ValueError(
                 f"deleted_pages({deleted_pages}) > page_count({page_count})"
             )
-        assigns = self.get_assigns_after_delete(
+        assigns = get_assigns_after_delete(
             total_pages=page_count,
             deleted_pages=deleted_pages
         )
