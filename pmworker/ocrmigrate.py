@@ -1,6 +1,8 @@
+import shutil
 from os import listdir
 from os.path import isfile, join
 from pmworker.endpoint import (DocumentEp, PageEp)
+from pmworker.step import Steps
 
 """
 OCR operations are per page. Cut/Paste/Delete/Reorder are per page as well.
@@ -80,7 +82,24 @@ def copy_page(src_page_ep, dst_page_ep):
         if not isinstance(inst, PageEp):
             raise ValueError(err_msg)
 
-    # copy content of page_x dir...
+    # copy .txt file
+    if src_page_ep.txt_exists():
+        shutil.copy(
+            src_page_ep.txt_url(),
+            dst_page_ep.txt_url()
+        )
+    # hocr
+    if src_page_ep.hocr_exists():
+        shutil.copy(
+            src_page_ep.hocr_url(),
+            dst_page_ep.hocr_url()
+        )
+
+    if src_page_ep.img_exists():
+        shutil.copy(
+            src_page_ep.img_url(),
+            dst_page_ep.img_url()
+        )
 
 
 class OcrMigrate:
@@ -126,17 +145,20 @@ class OcrMigrate:
             deleted_pages=deleted_pages
         )
         for a in assigns:
-            src_page_ep = PageEp(
-                document_ep=self.src_ep,
-                page_num=a[0],
-                page_count=page_count
-            )
-            dst_page_ep = PageEp(
-                document_ep=self.dst_ep,
-                page_num=a[1],
-                page_count=page_count - deleted_pages
-            )
-            copy_page(
-                src_page_ep=src_page_ep,
-                dst_page_ep=dst_page_ep
-            )
+            for step in Steps():
+                src_page_ep = PageEp(
+                    document_ep=self.src_ep,
+                    page_num=a[0],
+                    step=step,
+                    page_count=page_count
+                )
+                dst_page_ep = PageEp(
+                    document_ep=self.dst_ep,
+                    page_num=a[1],
+                    step=step,
+                    page_count=page_count - deleted_pages
+                )
+                copy_page(
+                    src_page_ep=src_page_ep,
+                    dst_page_ep=dst_page_ep
+                )

@@ -263,6 +263,10 @@ class PageEp:
         )
         return result
 
+    @property
+    def pages_dirname(self):
+        return self.document_ep.pages_dirname
+
     def exists(self, ep=Endpoint.LOCAL):
         return self.txt_exists(ep)
 
