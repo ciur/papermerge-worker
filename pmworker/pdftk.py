@@ -58,6 +58,8 @@ def cat_ranges_for_delete(page_count, page_numbers):
 
 
 def make_sure_path_exists(filepath):
+    logger.debug(f"make_sure_path_exists {filepath}")
+
     dirname = os.path.dirname(filepath)
     os.makedirs(
         dirname,

@@ -1,3 +1,4 @@
+import logging
 import shutil
 from os import listdir
 from os.path import isfile, join
@@ -12,6 +13,8 @@ on already extracted txt and hocr files.
 
 OcrMigrate class takes care of this sort of txt/hocr files moves.
 """
+
+logger = logging.getLogger(__name__)
 
 
 def get_pagecount(doc_ep):
@@ -88,17 +91,30 @@ def copy_page(src_page_ep, dst_page_ep):
             src_page_ep.txt_url(),
             dst_page_ep.txt_url()
         )
+    else:
+        logger.debug(
+            f"txt does not exits {src_page_ep.txt_exists()}"
+        )
+
     # hocr
     if src_page_ep.hocr_exists():
         shutil.copy(
             src_page_ep.hocr_url(),
             dst_page_ep.hocr_url()
         )
+    else:
+        logger.debug(
+            f"hocr does not exits {src_page_ep.hocr_exists()}"
+        )
 
     if src_page_ep.img_exists():
         shutil.copy(
             src_page_ep.img_url(),
             dst_page_ep.img_url()
+        )
+    else:
+        logger.debug(
+            f"img does not exits {src_page_ep.img_exists()}"
         )
 
 
