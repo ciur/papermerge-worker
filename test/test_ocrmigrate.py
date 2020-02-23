@@ -49,7 +49,7 @@ class TestOthers(unittest.TestCase):
         # of previous page #4
         self.assertEqual(
             result,
-            [[1, 2], [2, 3], [3, 4]]
+            [(1, 2), (2, 3), (3, 4)]
         )
 
         result = get_assigns_after_delete(
@@ -65,5 +65,5 @@ class TestOthers(unittest.TestCase):
         # of previous page #5
         self.assertEqual(
             result,
-            [[1, 1], [2, 4], [3, 5]]
+            [(1, 1), (2, 4), (3, 5)]
         )

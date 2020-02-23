@@ -34,7 +34,7 @@ def get_assigns_after_delete(total_pages, deleted_pages):
     total_pages: 6
     deleted_pages: [1, 2]
     returns: [
-        [[1, 3],  [2, 4], [3, 5], [4, 6]]
+        [(1, 3),  (2, 4), (3, 5), (4, 6)]
         # page #1 gets info from prev page #3
         # page #2 ... #4
         ...
@@ -45,20 +45,32 @@ def get_assigns_after_delete(total_pages, deleted_pages):
     total pages: 5
     deleted_pages [1, 5]
     returns: [
-        [[1, 2], [2, 3], [3, 4]
+        [(1, 2), (2, 3), (3, 4)
     ]
 
     Example 3:
     total pages: 5
     deleted_pages [2, 3]
     returns: [
-        [[1, 1], [2, 4], [3, 5]
+        [(1, 1), (2, 4), (3, 5)
         # page #1 stays unaffected
         # page #2 gets the info from page number 4
         # page #3 gets info from page #5
     ]
     """
-    pass
+    if total_pages < len(deleted_pages):
+        err_msg = f"total_pages < deleted_pages"
+        raise ValueError(err_msg)
+
+    # only numbers of pages which were not deleted
+    pages = [
+        page for page in list(range(1, total_pages + 1))
+        if page not in deleted_pages
+    ]
+
+    page_numbers = range(1, len(pages) + 1)
+
+    return list(zip(page_numbers, pages))
 
 
 def copy_page(src_page_ep, dst_page_ep):
