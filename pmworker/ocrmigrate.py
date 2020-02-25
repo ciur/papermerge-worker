@@ -1,7 +1,9 @@
 import logging
 import shutil
 from os import listdir
-from os.path import isfile, join
+from os.path import isdir, join
+
+from pmworker.pdftk import make_sure_path_exists
 from pmworker.endpoint import (DocumentEp, PageEp)
 from pmworker.step import Steps
 
@@ -23,11 +25,14 @@ def get_pagecount(doc_ep):
     Total number of pages = number of page_xy.txt files
     in pages_dirname folder.
     """
-    pages_dir = doc_ep.pages_dirname
-    onlyfiles = [
-        f for f in listdir(pages_dir) if isfile(join(pages_dir, f))
+    doc_ep_pointing_to_results = DocumentEp.copy_from(
+        doc_ep, aux_dir="results"
+    )
+    pages_dir = doc_ep_pointing_to_results.pages_dirname
+    only_dirs = [
+        fi for fi in listdir(pages_dir) if isdir(join(pages_dir, fi))
     ]
-    return len(onlyfiles)
+    return len(only_dirs)
 
 
 def get_assigns_after_delete(total_pages, deleted_pages):
@@ -87,6 +92,7 @@ def copy_page(src_page_ep, dst_page_ep):
 
     # copy .txt file
     if src_page_ep.txt_exists():
+        make_sure_path_exists(dst_page_ep.txt_url())
         shutil.copy(
             src_page_ep.txt_url(),
             dst_page_ep.txt_url()
@@ -98,6 +104,7 @@ def copy_page(src_page_ep, dst_page_ep):
 
     # hocr
     if src_page_ep.hocr_exists():
+        make_sure_path_exists(dst_page_ep.hocr_url())
         shutil.copy(
             src_page_ep.hocr_url(),
             dst_page_ep.hocr_url()
@@ -108,6 +115,7 @@ def copy_page(src_page_ep, dst_page_ep):
         )
 
     if src_page_ep.img_exists():
+        make_sure_path_exists(dst_page_ep.img_url())
         shutil.copy(
             src_page_ep.img_url(),
             dst_page_ep.img_url()
@@ -151,8 +159,7 @@ class OcrMigrate:
 
     def migrate_delete(self, deleted_pages):
         page_count = get_pagecount(self.src_ep)
-
-        if len(deleted_pages > page_count):
+        if len(deleted_pages) > page_count:
             raise ValueError(
                 f"deleted_pages({deleted_pages}) > page_count({page_count})"
             )
@@ -164,15 +171,15 @@ class OcrMigrate:
             for step in Steps():
                 src_page_ep = PageEp(
                     document_ep=self.src_ep,
-                    page_num=a[0],
+                    page_num=a[1],
                     step=step,
                     page_count=page_count
                 )
                 dst_page_ep = PageEp(
                     document_ep=self.dst_ep,
-                    page_num=a[1],
+                    page_num=a[0],
                     step=step,
-                    page_count=page_count - deleted_pages
+                    page_count=page_count - len(deleted_pages)
                 )
                 copy_page(
                     src_page_ep=src_page_ep,
