@@ -200,17 +200,17 @@ class OcrMigrate:
             )
             return
 
-        for index, value in enumerate(new_order):
+        for item in new_order:
             for step in Steps():
                 src_page_ep = PageEp(
                     document_ep=self.src_ep,
-                    page_num=index,
+                    page_num=int(item['page_num']),
                     step=step,
-                    page_count=page_count
+                    page_count=len(new_order)
                 )
                 dst_page_ep = PageEp(
                     document_ep=self.dst_ep,
-                    page_num=value,
+                    page_num=int(item['page_order']),
                     step=step,
                     page_count=len(new_order)
                 )

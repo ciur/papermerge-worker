@@ -36,8 +36,8 @@ def cat_ranges_for_reorder(page_count, new_order):
     page_map = {}
 
     for item in new_order:
-        k = item['page_num']
-        v = item['page_order']
+        k = int(item['page_num'])
+        v = int(item['page_order'])
         page_map[k] = v
 
     for number in range(1, page_count + 1):
@@ -123,8 +123,8 @@ def reorder_pages(doc_ep, new_order):
     page_count = get_pagecount(ep_url)
 
     cat_ranges = cat_ranges_for_reorder(
-        page_count,
-        new_order
+        page_count=page_count,
+        new_order=new_order
     )
 
     doc_ep.inc_version()
@@ -144,6 +144,8 @@ def reorder_pages(doc_ep, new_order):
     cmd.append(doc_ep.url())
 
     run(cmd)
+
+    return doc_ep.version
 
 
 def delete_pages(doc_ep, page_numbers):

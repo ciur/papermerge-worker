@@ -243,6 +243,10 @@ class PageEp:
         page_count,
         step=None
     ):
+        if not isinstance(page_num, int):
+            msg_err = f"PageEp.page_num must be an int. Got {page_num}."
+            raise ValueError(msg_err)
+
         self.document_ep = document_ep
         self.results_document_ep = DocumentEp.copy_from(
             document_ep,
