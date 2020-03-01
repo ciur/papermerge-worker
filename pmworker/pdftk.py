@@ -35,8 +35,10 @@ def cat_ranges_for_reorder(page_count, new_order):
     # value = page_order
     page_map = {}
 
-    for x in new_order:
-        page_map[new_order['page_num']] = new_order['page_order']
+    for item in new_order:
+        k = item['page_num']
+        v = item['page_order']
+        page_map[k] = v
 
     for number in range(1, page_count + 1):
         results.append(
