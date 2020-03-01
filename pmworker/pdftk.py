@@ -13,6 +13,10 @@ logger = logging.getLogger(__name__)
 #
 
 
+def cat_ranges_for_reorder(page_count, new_order):
+    pass
+
+
 def cat_ranges_for_delete(page_count, page_numbers):
     """
     Returns a list of integers. Each number in the list
@@ -65,6 +69,26 @@ def make_sure_path_exists(filepath):
         dirname,
         exist_ok=True
     )
+
+
+def reorder_pages(doc_ep, new_order):
+    """
+    new_order is a list of following format:
+
+        [
+            {'page_num': 2, page_order: 1},
+            {'page_num': 1, page_order: 2},
+            {'page_num': 3, page_order: 3},
+            {'page_num': 4, page_order: 4},
+        ]
+    Example above means that in current document of 4 pages,
+    first page was swapped with second one.
+    page_num    = older page order
+    page_order  = current page order
+    So in human language, each hash is read:
+        <page_num> now should be <page_order>
+    """
+    pass
 
 
 def delete_pages(doc_ep, page_numbers):

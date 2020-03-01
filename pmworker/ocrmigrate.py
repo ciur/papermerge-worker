@@ -185,3 +185,6 @@ class OcrMigrate:
                     src_page_ep=src_page_ep,
                     dst_page_ep=dst_page_ep
                 )
+
+    def migrate_reorder(self, new_order):
+        pass
