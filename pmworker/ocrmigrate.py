@@ -160,9 +160,11 @@ class OcrMigrate:
     def migrate_delete(self, deleted_pages):
         page_count = get_pagecount(self.src_ep)
         if len(deleted_pages) > page_count:
-            raise ValueError(
+            logger.error(
                 f"deleted_pages({deleted_pages}) > page_count({page_count})"
             )
+            return
+
         assigns = get_assigns_after_delete(
             total_pages=page_count,
             deleted_pages=deleted_pages
@@ -187,4 +189,32 @@ class OcrMigrate:
                 )
 
     def migrate_reorder(self, new_order):
-        pass
+        """
+        Similar to migrate_delete, with minor tweaks.
+        """
+        page_count = get_pagecount(self.src_ep)
+
+        if len(new_order) > page_count:
+            logger.error(
+                f"deleted_pages({new_order}) > page_count({page_count})"
+            )
+            return
+
+        for index, value in enumerate(new_order):
+            for step in Steps():
+                src_page_ep = PageEp(
+                    document_ep=self.src_ep,
+                    page_num=index,
+                    step=step,
+                    page_count=page_count
+                )
+                dst_page_ep = PageEp(
+                    document_ep=self.dst_ep,
+                    page_num=value,
+                    step=step,
+                    page_count=len(new_order)
+                )
+                copy_page(
+                    src_page_ep=src_page_ep,
+                    dst_page_ep=dst_page_ep
+                )
