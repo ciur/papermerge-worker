@@ -14,7 +14,36 @@ logger = logging.getLogger(__name__)
 
 
 def cat_ranges_for_reorder(page_count, new_order):
-    pass
+    """
+    Returns a list of integers. Each number in the list
+    is correctly positioned (newly ordered) page.
+
+    Examples:
+
+    If in document with 4 pages first and second pages were
+    swapped, then returned list will be:
+
+        [2, 1, 3, 4]
+
+    If first page was swapped with last one (also 4 paegs document)
+    result list will look like:
+
+        [4, 2, 3, 1]
+    """
+    results = []
+    # key = page_num
+    # value = page_order
+    page_map = {}
+
+    for x in new_order:
+        page_map[new_order['page_num']] = new_order['page_order']
+
+    for number in range(1, page_count + 1):
+        results.append(
+            page_map[number]
+        )
+
+    return results
 
 
 def cat_ranges_for_delete(page_count, page_numbers):
@@ -88,7 +117,31 @@ def reorder_pages(doc_ep, new_order):
     So in human language, each hash is read:
         <page_num> now should be <page_order>
     """
-    pass
+    ep_url = doc_ep.url()
+    page_count = get_pagecount(ep_url)
+
+    cat_ranges = cat_ranges_for_reorder(
+        page_count,
+        new_order
+    )
+
+    doc_ep.inc_version()
+
+    cmd = [
+        "pdftk",
+        ep_url,
+        "cat"
+    ]
+    for page in cat_ranges:
+        cmd.append(
+            str(page)
+        )
+
+    cmd.append("output")
+    make_sure_path_exists(doc_ep.url())
+    cmd.append(doc_ep.url())
+
+    run(cmd)
 
 
 def delete_pages(doc_ep, page_numbers):
