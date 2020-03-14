@@ -102,6 +102,28 @@ def make_sure_path_exists(filepath):
     )
 
 
+def paste_pages(dest_doc_ep, src_doc_ep_list):
+    """
+    dest_doc_ep = endpoint of the doc where newly created
+        file will be placed.
+    src_doc_ep_list is a list of following format:
+        [
+            {
+                'doc_ep': doc_ep,
+                'page_nums': [page_num_1, page_num_2, page_num_3]
+            },
+            {
+                'doc_ep': doc_ep,
+                'page_nums': [page_num_1, page_num_2, page_num_3]
+            },
+            ...
+        ]
+    src_doc_ep_list is a list of documents where pages
+    (with numbers page_num_1...) will be paste from.
+    """
+    pass
+
+
 def reorder_pages(doc_ep, new_order):
     """
     new_order is a list of following format:
