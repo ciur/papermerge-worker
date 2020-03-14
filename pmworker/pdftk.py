@@ -151,15 +151,13 @@ def paste_pages(
         doc_ep = src_doc_ep_list[idx]['doc_ep']
         pages = src_doc_ep_list[idx]['page_nums']
 
-        letters_2_doc_map.extend(
-            [letter, "=", doc_ep.url()]
+        letters_2_doc_map.append(
+            f"{letter}={doc_ep.url()}"
         )
-        letters_pages.extend(
-            [letter]
-        )
-        letters_pages.extend(
-            [str(p) for p in pages]
-        )
+        for p in pages:
+            letters_pages.append(
+                f"{letter}{p}"
+            )
 
     dest_doc_ep.inc_version()
 
