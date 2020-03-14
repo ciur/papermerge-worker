@@ -126,6 +126,50 @@ def copy_page(src_page_ep, dst_page_ep):
         )
 
 
+def migrate_cutted_pages(dest_ep, src_doc_ep_list):
+    """
+    dest_ep = destination document endpoint
+    src_doc_ep_list = a list of following format:
+    [
+        {
+            'doc_ep': doc_ep,
+            'page_nums': [page_num_1, page_num_2, page_num_3]
+        },
+        {
+            'doc_ep': doc_ep,
+            'page_nums': [page_num_1, page_num_2, page_num_3]
+        },
+        ...
+    ]
+    with a list of source document with copied pages.
+    """
+    dest_page_num = 1
+    dest_page_count = sum([
+        len(item['page_nums']) for item in src_doc_ep_list
+    ])
+    for item in src_doc_ep_list:
+        src_ep = item['doc_ep']
+        for page_num in item['page_nums']:
+            for step in Steps():
+                src_page_ep = PageEp(
+                    document_ep=src_ep,
+                    page_num=int(page_num),
+                    step=step,
+                    page_count=get_pagecount(src_ep)
+                )
+                dst_page_ep = PageEp(
+                    document_ep=dest_ep,
+                    page_num=dest_page_num,
+                    step=step,
+                    page_count=dest_page_count
+                )
+                copy_page(
+                    src_page_ep=src_page_ep,
+                    dst_page_ep=dst_page_ep
+                )
+            dest_page_num += 1
+
+
 class OcrMigrate:
     """
     Insead of running again OCR operation on changed document AGAIN
