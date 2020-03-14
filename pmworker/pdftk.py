@@ -94,7 +94,6 @@ def cat_ranges_for_delete(page_count, page_numbers):
 
 def make_sure_path_exists(filepath):
     logger.debug(f"make_sure_path_exists {filepath}")
-
     dirname = os.path.dirname(filepath)
     os.makedirs(
         dirname,
@@ -102,7 +101,13 @@ def make_sure_path_exists(filepath):
     )
 
 
-def paste_pages(dest_doc_ep, src_doc_ep_list):
+def paste_pages(
+    dest_doc_ep,
+    src_doc_ep_list,
+    dest_doc_is_new=True,
+    after_page_number=-1,
+    before_page_number=-1
+):
     """
     dest_doc_ep = endpoint of the doc where newly created
         file will be placed.
@@ -120,8 +125,63 @@ def paste_pages(dest_doc_ep, src_doc_ep_list):
         ]
     src_doc_ep_list is a list of documents where pages
     (with numbers page_num_1...) will be paste from.
+
+    dest_doc_is_new = True well.. destination document was just created,
+    we are pasting here cutted pages into some folder as new document.
+
+    In this case 'after' and 'before' arguments are ignored
+
+    dest_doc_is_new = False, pasting pages into exiting document.
+    If before_page_number > 0 - paste pages before page number
+        'before_page_number'
+    If after_page_number > 0 - paste pages after page number
+        'after_page_number'
+
+    before_page_number argument has priority over after_page_number.
+
+    If both before_page_number and after_page_number are < 0 - just paste
+    pages at the end of the document.
     """
-    pass
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    letters_2_doc_map = []
+    letters_pages = []
+
+    for idx in range(0, len(src_doc_ep_list)):
+        letter = letters[idx]
+        doc_ep = src_doc_ep_list[idx]['doc_ep']
+        pages = src_doc_ep_list[idx]['page_nums']
+
+        letters_2_doc_map.extend(
+            [letter, "=", doc_ep.url()]
+        )
+        letters_pages.extend(
+            [letter]
+        )
+        letters_pages.extend(
+            [str(p) for p in pages]
+        )
+
+    dest_doc_ep.inc_version()
+
+    cmd = [
+        "pdftk",
+    ]
+    # add A=doc1_path, B=doc2_path
+    cmd.extend(letters_2_doc_map)
+
+    cmd.append("cat")
+
+    cmd.extend(letters_pages)
+
+    cmd.append("output")
+
+    make_sure_path_exists(dest_doc_ep.url())
+
+    cmd.append(dest_doc_ep.url())
+
+    run(cmd)
+
+    return dest_doc_ep.version
 
 
 def reorder_pages(doc_ep, new_order):
