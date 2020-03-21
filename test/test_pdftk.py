@@ -2,7 +2,8 @@ import unittest
 from pathlib import Path
 from pmworker.pdftk import (
     cat_ranges_for_delete,
-    cat_ranges_for_reorder
+    cat_ranges_for_reorder,
+    split_ranges
 )
 
 
@@ -12,6 +13,46 @@ abs_path_input_pdf = test_data_dir / Path("input.de.pdf")
 
 
 class TestPDFTk(unittest.TestCase):
+
+    def test_split_ranges_input_1(self):
+        """
+        Input: total = 9, after=1, before=False
+        Output: list1 = [1]; list2 = [2, 3, 4, ..., 9].
+        """
+        list1, list2 = split_ranges(
+            total=9,
+            after=1,
+            before=False
+        )
+
+        self.assertEqual(
+            list1,
+            [1]
+        )
+        self.assertEqual(
+            list2,
+            [2, 3, 4, 5, 6, 7, 8, 9]
+        )
+
+    def test_split_ranges_input_2(self):
+        """
+        Input: total = 9; after=False, before=1
+        Output: list1 = [], list2 = [1, 2, 3, 4, ..., 9]
+        """
+        list1, list2 = split_ranges(
+            total=9,
+            after=False,
+            before=1
+        )
+
+        self.assertEqual(
+            list1,
+            []
+        )
+        self.assertEqual(
+            list2,
+            [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        )
 
     def test_cat_ranger_for_reorder(self):
         # swap first and second pages

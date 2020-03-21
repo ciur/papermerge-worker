@@ -125,7 +125,7 @@ def split_ranges(total, after=False, before=False):
                 "argument 'after' is supposed to be an int"
             )
         list1 = list(range(1, after + 1))
-        list2 = list(range(after + 1, total))
+        list2 = list(range(after + 1, total + 1))
         return list1, list2
 
     if not after and before:
@@ -134,7 +134,7 @@ def split_ranges(total, after=False, before=False):
                 "argument 'before' is supposed to be an int"
             )
         list1 = list(range(1, before))
-        list2 = list(range(before, total))
+        list2 = list(range(before, total + 1))
         return list1, list2
 
     return list(range(1, total + 1))
