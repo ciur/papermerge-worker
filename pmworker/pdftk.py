@@ -137,7 +137,10 @@ def split_ranges(total, after=False, before=False):
         list2 = list(range(before, total + 1))
         return list1, list2
 
-    return list(range(1, total + 1))
+    list1 = list(range(1, total + 1))
+    list2 = []
+
+    return list1, list2
 
 
 def paste_pages_into_existing_doc(

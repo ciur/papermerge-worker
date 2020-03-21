@@ -54,6 +54,46 @@ class TestPDFTk(unittest.TestCase):
             [1, 2, 3, 4, 5, 6, 7, 8, 9]
         )
 
+    def test_split_ranges_input_3(self):
+        """
+        Input: total = 5; after=4; before=False
+        Output: list1 = [1, 2, 3, 4] list2 = [5]
+        """
+        list1, list2 = split_ranges(
+            total=5,
+            after=4,
+            before=False
+        )
+
+        self.assertEqual(
+            list1,
+            [1, 2, 3, 4]
+        )
+        self.assertEqual(
+            list2,
+            [5]
+        )
+
+    def test_split_ranges_input_4(self):
+        """
+        Input: total = 5; after=False; before=False
+        Output: list1 = [1, 2, 3, 4, 5] list2 = []
+        """
+        list1, list2 = split_ranges(
+            total=5,
+            after=False,
+            before=False
+        )
+
+        self.assertEqual(
+            list1,
+            [1, 2, 3, 4, 5]
+        )
+        self.assertEqual(
+            list2,
+            []
+        )
+
     def test_cat_ranger_for_reorder(self):
         # swap first and second pages
         result = cat_ranges_for_reorder(
