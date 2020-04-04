@@ -138,6 +138,35 @@ class TestPDFTk(unittest.TestCase):
             [2, 1],
         )
 
+    def test_cat_ranger_for_reorder_4_Y_pages(self):
+        """
+        Given document Y with 4 pages in following order:
+            Y2
+            Y4
+            Y1
+            Y3
+        Try to reorder them:
+            Y1
+            Y2
+            Y3
+            Y4
+        """
+
+        # swap pages in two pages document
+        result = cat_ranges_for_reorder(
+            page_count=4,
+            new_order=[
+                {'page_num': 1, 'page_order': 2},
+                {'page_num': 2, 'page_order': 4},
+                {'page_num': 3, 'page_order': 1},
+                {'page_num': 4, 'page_order': 3},
+            ]
+        )
+        self.assertEqual(
+            result,
+            [3, 1, 4, 2],
+        )
+
     def test_cat_ranges_for_delete(self):
         result = cat_ranges_for_delete(
             page_count=8,

@@ -36,8 +36,8 @@ def cat_ranges_for_reorder(page_count, new_order):
     page_map = {}
 
     for item in new_order:
-        k = int(item['page_num'])
-        v = int(item['page_order'])
+        k = int(item['page_order'])
+        v = int(item['page_num'])
         page_map[k] = v
 
     for number in range(1, page_count + 1):
@@ -260,7 +260,6 @@ def paste_pages(
     If both before_page_number and after_page_number are < 0 - just paste
     pages at the end of the document.
     """
-
     if not dest_doc_is_new:
         return paste_pages_into_existing_doc(
             dest_doc_ep=dest_doc_ep,
@@ -348,7 +347,6 @@ def reorder_pages(doc_ep, new_order):
     cmd.append("output")
     make_sure_path_exists(doc_ep.url())
     cmd.append(doc_ep.url())
-
     run(cmd)
 
     return doc_ep.version

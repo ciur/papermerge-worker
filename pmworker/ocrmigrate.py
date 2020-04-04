@@ -93,10 +93,11 @@ def copy_page(src_page_ep, dst_page_ep):
     # copy .txt file
     if src_page_ep.txt_exists():
         make_sure_path_exists(dst_page_ep.txt_url())
-        shutil.copy(
-            src_page_ep.txt_url(),
-            dst_page_ep.txt_url()
-        )
+
+        src_txt = src_page_ep.txt_url()
+        dst_txt = dst_page_ep.txt_url()
+        logger.debug(f"copy src_txt={src_txt} dst_txt={dst_txt}")
+        shutil.copy(src_txt, dst_txt)
     else:
         logger.debug(
             f"txt does not exits {src_page_ep.txt_exists()}"
@@ -105,10 +106,11 @@ def copy_page(src_page_ep, dst_page_ep):
     # hocr
     if src_page_ep.hocr_exists():
         make_sure_path_exists(dst_page_ep.hocr_url())
-        shutil.copy(
-            src_page_ep.hocr_url(),
-            dst_page_ep.hocr_url()
-        )
+
+        src_hocr = src_page_ep.hocr_url()
+        dst_hocr = dst_page_ep.hocr_url()
+        logger.debug(f"copy src_hocr={src_hocr} dst_hocr={dst_hocr}")
+        shutil.copy(src_hocr, dst_hocr)
     else:
         logger.debug(
             f"hocr does not exits {src_page_ep.hocr_exists()}"
@@ -116,10 +118,11 @@ def copy_page(src_page_ep, dst_page_ep):
 
     if src_page_ep.img_exists():
         make_sure_path_exists(dst_page_ep.img_url())
-        shutil.copy(
-            src_page_ep.img_url(),
-            dst_page_ep.img_url()
-        )
+
+        src_img = src_page_ep.img_url()
+        dst_img = dst_page_ep.img_url()
+        logger.debug(f"copy src_img={src_img} dst_img={dst_img}")
+        shutil.copy(src_img, dst_img)
     else:
         logger.debug(
             f"img does not exits {src_page_ep.img_exists()}"
@@ -163,6 +166,7 @@ def migrate_cutted_pages(dest_ep, src_doc_ep_list):
                     step=step,
                     page_count=dest_page_count
                 )
+                logger.debug(f"src={src_page_ep}  dst={dst_page_ep}")
                 copy_page(
                     src_page_ep=src_page_ep,
                     dst_page_ep=dst_page_ep
