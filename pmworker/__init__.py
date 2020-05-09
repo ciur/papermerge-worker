@@ -2,8 +2,6 @@ import yaml
 import os
 import logging
 import logging.config
-from pmworker import endpoint
-from pmworker.settings import get_settings
 
 ENG = "eng"
 DEU = "deu"
@@ -22,16 +20,6 @@ def lang_human_name(lang):
 
 
 logger = logging.getLogger(__name__)
-
-
-def get_s3_storage_root_url():
-    settings = get_settings()
-    return endpoint.Endpoint(settings['s3_storage'])
-
-
-def get_local_storage_root_url():
-    settings = get_settings()
-    return endpoint.Endpoint(settings['local_storage'])
 
 
 def setup_logging():

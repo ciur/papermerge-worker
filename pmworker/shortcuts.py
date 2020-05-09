@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def extract_img(page_url):
-    local_abspath = page_url.document_ep.url()
+    local_abspath = page_url.document_path.url()
     ppmroot_dirname = os.path.dirname(page_url.ppmroot)
     page_num = page_url.page_num
     width = page_url.step.width

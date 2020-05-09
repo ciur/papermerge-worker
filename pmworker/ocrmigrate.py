@@ -4,7 +4,7 @@ from os import listdir
 from os.path import isdir, join
 
 from pmworker.pdftk import make_sure_path_exists
-from pmworker.endpoint import (DocumentEp, PageEp)
+from mglib.path import (DocumentPath, PagePath)
 from pmworker.step import Steps
 
 """
@@ -25,7 +25,7 @@ def get_pagecount(doc_ep):
     Total number of pages = number of page_xy.txt files
     in pages_dirname folder.
     """
-    doc_ep_pointing_to_results = DocumentEp.copy_from(
+    doc_ep_pointing_to_results = DocumentPath.copy_from(
         doc_ep, aux_dir="results"
     )
     pages_dir = doc_ep_pointing_to_results.pages_dirname
@@ -87,7 +87,7 @@ def copy_page(src_page_ep, dst_page_ep):
     err_msg = "copy_page accepts only PageEp instances"
 
     for inst in [src_page_ep, dst_page_ep]:
-        if not isinstance(inst, PageEp):
+        if not isinstance(inst, PagePath):
             raise ValueError(err_msg)
 
     # copy .txt file

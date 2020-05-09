@@ -22,10 +22,6 @@ from pmworker.shortcuts import (
     extract_txt
 )
 from pmworker import pdftk
-from pmworker import (
-    get_local_storage_root_url,
-    get_s3_storage_root_url
-)
 from celery import shared_task
 
 logger = logging.getLogger(__name__)
@@ -103,8 +99,6 @@ def ocr_page(
         user_id=user_id,
         document_id=document_id,
         file_name=file_name,
-        local_endpoint=get_local_storage_root_url(),
-        remote_endpoint=get_s3_storage_root_url()
     )
 
     logger.debug(
