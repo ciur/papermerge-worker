@@ -244,54 +244,6 @@ def download(
     return True
 
 
-def copy2doc_url(
-    src_file_path,
-    doc_url,
-    user="dgl",
-    group="www-dgl"
-):
-    dirname = os.path.dirname(doc_url)
-
-    if not os.path.exists(
-        dirname
-    ):
-        os.makedirs(
-            dirname, exist_ok=True
-        )
-        try:
-            # if provided user/group exsits
-            # change owner of the dir to given user/group
-            pwd.getpwnam(user)
-            grp.getgrnam(group)
-            shutil.chown(
-                dirname,
-                user=user,
-                group=group
-            )
-        except KeyError:
-            # otherwise leave current process' user/group
-            pass
-    logger.debug(
-        f"copy2doc_url {src_file_path} to {doc_url}"
-    )
-    shutil.copyfile(
-        src_file_path,
-        doc_url
-    )
-    try:
-        # if provided user/group exsits
-        # change owner of the dir to given user/group
-        pwd.getpwnam(user)
-        grp.getgrnam(group)
-        shutil.chown(
-            src_file_path,
-            user=user,
-            group=group
-        )
-    except KeyError:
-        # otherwise leave current process's user/group
-        pass
-
 
 class Storage:
     """
