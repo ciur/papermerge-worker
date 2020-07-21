@@ -27,12 +27,12 @@ Run Tests
 =============
 Run all tests:
     
-    python3 run.py
+    python3 ./test/run.py
 
 Run specific test file:
 
-    python3 run.py -p test_endpoint
+    python3 ./test/run.py -p test_endpoint
 
 Which is same as:
 
-    python3 run.py -p test_endpoint.py
+    python3 ./test/run.py -p test_endpoint.py
